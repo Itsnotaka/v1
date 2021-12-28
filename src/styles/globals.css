@@ -16,8 +16,6 @@ body {
 
 	background-size: cover;
 	background-repeat: no-repeat;
-	display: flex;
-	@apply overflow-x-clip;
 }
 
 p {
