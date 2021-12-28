@@ -1,0 +1,28 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+	margin: 0;
+	box-sizing: border-box;
+
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+
+	min-height: 100%;
+	color: #ededed;
+
+	@apply bg-near-black;
+
+	background-size: cover;
+	background-repeat: no-repeat;
+	display: flex;
+	@apply overflow-x-clip;
+}
+
+p {
+	display: flex;
+	text-align: center;
+
+	@apply text-lg leading-8;
+}
