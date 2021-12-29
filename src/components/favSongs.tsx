@@ -22,9 +22,9 @@ const files = [
 		source: 'https://i.scdn.co/image/ab67616d00001e02582ef1f9cf429f07ee914a89',
 	},
 	{
-		title: 'Glad You Exist - Acoustic',
-		author: 'Dan + Shay',
-		source: 'https://i.scdn.co/image/ab67616d00001e026cbd3dfcd42d5ebba45763de',
+		title: '有些',
+		author: '顏人中',
+		source: 'https://i.scdn.co/image/ab67616d00001e02c17714a11ba7db7fda4787fe',
 	},
 	{
 		title: 'Blue',
