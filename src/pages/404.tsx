@@ -20,7 +20,7 @@ const Page404 = () => {
 							<div className="sm:ml-6">
 								<div className="sm:border-l sm:border-gray-200 sm:pl-6">
 									<h1 className="text-4xl max-w-xl font-extrabold text-violet-400 tracking-tight sm:text-5xl">
-										Uh oh, looks like we couldnt find what you were looking for! 
+										Uh oh, looks like we couldn't find what you were looking for! 
 									</h1>
 									<p className="mt-1 text-base text-gray-300">
 										Please check the link and try again.
