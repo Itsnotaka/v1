@@ -38,9 +38,9 @@ const about = () => {
 							I am just an ordinary neighbourhood student who is into Economics
 							and Computer Science. Oh yeah, I listen to a wide variety of
 							musics as well.
-							<br/>
-							In Fact, according to Spotify, I spent 46,992 minutes
-							listening music.
+							<br />
+							In Fact, according to Spotify, I spent 46,992 minutes listening
+							music.
 						</p>
 						<span>
 							<h1 className="relative top-2 font-mit text-center font-bold text-2xl not-sr-only">
