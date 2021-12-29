@@ -50,7 +50,7 @@ const FavSingers = () => {
 						<img
 							src={file.source}
 							alt=""
-							className="object-cover pointer-events-none transition-all duration-500 group-hover:scale-150"
+							className="object-cover pointer-events-none transition-all duration-500 group-hover:scale-110"
 						/>
 					</div>
 					<p className="opacity-70 mt-2 block text-sm font-medium text-white truncate pointer-events-none">
