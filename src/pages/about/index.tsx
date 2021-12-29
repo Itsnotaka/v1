@@ -2,7 +2,6 @@ import next from 'next';
 import React from 'react';
 import Typist from 'react-typist';
 import Header from '../../components/Header';
-import {ListItem} from '../../components/ListItems';
 import Image from 'next/image';
 import Banner from '../../../public/banner.jpg';
 import FavSongs from '../../components/FavSongs';
@@ -49,8 +48,8 @@ const about = () => {
 							</h1>
 						</span>
 						<FavSongs />
-						<SongBlock />
-						<ReverseSongBlock />
+						<SongBlock songTitle="1" description="1" ImageLink="1" />
+						<ReverseSongBlock songTitle="1" description="1" ImageLink="1" />
 					</div>
 				</div>
 			</div>

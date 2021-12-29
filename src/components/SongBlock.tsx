@@ -1,29 +1,15 @@
-/* This example requires Tailwind CSS v2.0+ */
-const SongBlock = () => {
+import Image from 'next/image';
+import React from 'react';
+
+const SongBlock = (songTitle: string, description: string, ImageLink: string) => {
 	return (
 		<div className="sm:flex">
 			<div className="mb-4 flex-shrink-0 sm:mb-0 sm:mr-4">
-				<svg
-					className="h-32 w-full sm:w-32 border border-gray-300 bg-white text-gray-300"
-					preserveAspectRatio="none"
-					stroke="currentColor"
-					fill="none"
-					viewBox="0 0 200 200"
-					aria-hidden="true"
-				>
-					<path
-						vectorEffect="non-scaling-stroke"
-						strokeWidth={1}
-						d="M0 0l200 200M0 200L200 0"
-					/>
-				</svg>
+				<Image src={ImageLink} className="w-32 h-32" />
 			</div>
 			<div>
-				<h4 className="text-lg font-bold">Lorem ipsum</h4>
-				<p className="mt-1">
-					Repudiandae sint consequuntur vel. Amet ut nobis explicabo numquam
-					expedita quia omnis voluptatem. Minus quidem ipsam quia iusto.
-				</p>
+				<h4 className="text-lg font-bold">{songTitle}</h4>
+				<p className="mt-1">{description}</p>
 			</div>
 		</div>
 	);
