@@ -12,8 +12,8 @@ body {
 	min-height: 100%;
 	color: #ededed;
 
-	@apply bg-near-black;
-
+	@apply  bg-starlight;
+	
 	background-size: cover;
 	background-repeat: no-repeat;
 }

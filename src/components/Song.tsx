@@ -8,7 +8,7 @@ export function Song() {
 	const {data: user} = useLanyard(DISCORD_ID);
 
 	const c =
-		'text-right float-right inline-flex select-none text-lg items-center space-x-2 no-underline text-Slate-300 opacity-50 hover:opacity-100 py-4';
+		'font-medium text-mit text-right float-right inline-flex select-none text-lg items-center space-x-2 no-underline text-Slate-300 opacity-70 hover:opacity-100 py-4';
 
 	if (!user || !user.spotify) {
 		return (

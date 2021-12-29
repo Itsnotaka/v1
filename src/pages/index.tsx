@@ -25,18 +25,18 @@ import {
 } from 'react-icons/si';
 
 let age = new Date().getUTCFullYear() - 2003;
+
 const Home: NextPage = () => {
 	return (
 		<>
 			<Header />
-
 			<div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
 				{/* We've used 3xl here, but feel free to try other max-widths based on your needs */}
 				<div className="max-w-3xl mx-auto">
 					<div className="space-y-4 text-center">
 						<div className="flex space-x-3"></div>
 						<h1 className="font-mit font-bold text-4xl">
-							Hello, I am daniel 👋
+							Hello, I am Daniel 👋
 						</h1>
 						<Typist className="relative text-lg font-medium top-2 underline">
 							Be passionate about your life, be interested in everything
@@ -52,11 +52,9 @@ const Home: NextPage = () => {
 						<h1 className="font-mit text-left font-medium text-2xl">
 							My Tech Stack 💻
 						</h1>
-						<p className="opacity-80">
-							
-						</p>
+						<p className="opacity-80"></p>
 						<ul className="grid grid-cols-3 sm:grid-cols-4 gap-4">
-							<ListItem icon={SiPostgresql} text="Postgres" link='https://www.postgresql.org/'/>
+							<ListItem icon={SiPostgresql} text="Postgres" />
 							<ListItem icon={SiReact} text="React.js" />
 							<ListItem icon={SiNodeDotJs} text="Node.js" />
 							<ListItem icon={SiTypescript} text="TypeScript" />

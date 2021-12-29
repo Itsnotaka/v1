@@ -1,27 +1,53 @@
 /* This example requires Tailwind CSS v2.0+ */
+import {Transition} from '@headlessui/react';
 import Link from 'next/link';
+import {useState, Fragment} from 'react';
+import {useTimeoutFn} from 'react-use';
 import icon from '../../public/sad.png';
 import {Song} from './Song';
+import {VscRocket} from 'react-icons/vsc';
 
 const navigation = [
-	{name: '#', href: '#'},
+	{name: '#', href: '/'},
 	{name: 'About', href: 'about'},
 ];
 
 const Header = () => {
+	let [isShowing, setIsShowing] = useState(true);
+	let [, , resetIsShowing] = useTimeoutFn(() => setIsShowing(true), 500);
 	return (
-		<header className="bg-near-black">
+		<header className=" max-h-auto">
 			<nav className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8" aria-label="Top">
 				<div className="w-full py-6 flex items-center justify-between border-b border-near-black lg:border-none">
 					<div className="flex items-center">
 						{/* <span className="sr-only">Workflow</span> */}
-						<img
-							className="opacity-50 hover:opacity-100 h-10 w-auto rounded-xl"
-							src="https://cdn.discordapp.com/attachments/711900255456591892/925362074773749760/Untitled_1.png"
-							alt=""
-						/>
+						<button
+							onClick={() => {
+								setIsShowing(false);
+								resetIsShowing();
+							}}
+						>
+							<Transition
+								as={Fragment}
+								show={isShowing}
+								enter="transform transition duration-[400ms]"
+								enterFrom="opacity-0 rotate-[-120deg] scale-50"
+								enterTo="opacity-100 rotate-0 scale-100"
+								leave="transform duration-200 transition ease-in-out"
+								leaveFrom="opacity-100 rotate-0 scale-100 "
+								leaveTo="opacity-0 scale-95 "
+							>
+								<img
+									className="opacity-50 hover:opacity-100 h-10 w-auto rounded-xl"
+									src="https://cdn.discordapp.com/attachments/711900255456591892/925362074773749760/Untitled_1.png"
+									alt=""
+								/>
+							</Transition>
+						</button>
+
 						<div className="hidden ml-10 space-x-8 lg:block">
 							{/*className="opacity-50 hover:opacity-100 text-base font-mit font-bold text-white hover:text-indigo-50*/}
+
 							{navigation.map(link => (
 								<Link key={link.name} href={link.href}>
 									{link.name}
@@ -49,7 +75,8 @@ const Header = () => {
 				</div>
 				<div className="py-4 flex flex-wrap justify-center space-x-6 lg:hidden">
 					{/* className="text-base font-mit font-bold text-white hover:text-indigo-50" */}
-					{navigation.map (link => (
+					<p>{VscRocket}</p>
+					{navigation.map(link => (
 						<Link key={link.name} href={link.href}>
 							{link.name}
 						</Link>
