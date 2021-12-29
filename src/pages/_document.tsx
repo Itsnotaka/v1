@@ -12,8 +12,9 @@ export default class AkaDocument extends Document {
 						type="image/png"
 						href="https://cdn.discordapp.com/attachments/715825678821621831/909135240134525018/me_400x400.png"
 					/>
-					<meta name="theme-color" content="#b17bff" />
+					<meta name="theme-color" content="#000000" />
 					<meta
+					
 						name="description"
 						content="Min Chun Fu, a full-stack developer from Taiwan"
 					/>
