@@ -12,7 +12,7 @@ body {
 	min-height: 100%;
 	color: #ededed;
 
-	@apply  bg-starlight;
+	@apply  bg-near-black;
 	
 	background-size: cover;
 	background-repeat: no-repeat;
