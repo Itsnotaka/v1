@@ -5,13 +5,9 @@ import Header from '../../components/Header';
 import {ListItem} from '../../components/ListItems';
 import Image from 'next/image';
 import Banner from '../../../public/banner.jpg';
-import FavSongs from '../../components/favSongs';
-import useSWR from 'swr'
-
-function spotifyData() {
-	
-}
-  
+import FavSongs from '../../components/FavSongs';
+import SongBlock from '../../components/SongBlock';
+import ReverseSongBlock from '../../components/ReverseSongBlock';
 
 const about = () => {
 	return (
@@ -43,15 +39,18 @@ const about = () => {
 						<p className="relative text-left opacity-80 not-sr-only">
 							I am just an ordinary neighbourhood student who is into Economics
 							and Computer Science.
-							<br/>
-							Oh yeah, I listen to a wide variety of musics as well. In Fact, according to spotify, I spent 
+							<br />
+							Oh yeah, I listen to a wide variety of musics as well. In Fact,
+							according to Spotify, I spent 46,992 minutes listening on Spotify.
 						</p>
 						<span>
 							<h1 className="relative top-2 font-mit text-center font-bold text-2xl not-sr-only">
-								My Favorite Songs
+								Some Of My Favorite Songs
 							</h1>
 						</span>
 						<FavSongs />
+						<SongBlock />
+						<ReverseSongBlock />
 					</div>
 				</div>
 			</div>

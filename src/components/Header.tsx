@@ -3,9 +3,7 @@ import {Transition} from '@headlessui/react';
 import Link from 'next/link';
 import {useState, Fragment} from 'react';
 import {useTimeoutFn} from 'react-use';
-import icon from '../../public/sad.png';
 import {Song} from './Song';
-import {VscRocket} from 'react-icons/vsc';
 
 const navigation = [
 	{name: '#', href: '/'},
@@ -19,7 +17,7 @@ const Header = () => {
 		<header className=" max-h-auto">
 			<nav className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8" aria-label="Top">
 				<div className="w-full py-6 flex items-center justify-between border-b border-near-black lg:border-none">
-					<div className="flex items-center">
+					<div className="flex items-center ">
 						{/* <span className="sr-only">Workflow</span> */}
 						<button
 							onClick={() => {
@@ -45,7 +43,9 @@ const Header = () => {
 							</Transition>
 						</button>
 
-						<div className="hidden ml-10 space-x-8 lg:block">
+						<div
+							className={`hidden ml-10 space-x-8 lg:block underline decoration-teal-300/80 hover:decoration-white duration-300`}
+						>
 							{/*className="opacity-50 hover:opacity-100 text-base font-mit font-bold text-white hover:text-indigo-50*/}
 
 							{navigation.map(link => (
@@ -73,9 +73,8 @@ const Header = () => {
               </a> 
             </div> */}
 				</div>
-				<div className="py-4 flex flex-wrap justify-center space-x-6 lg:hidden">
+				<div className="py-4 flex flex-wrap justify-center space-x-6 lg:hidden duration-300 hover:decoration-white underline decoration-teal-300/80">
 					{/* className="text-base font-mit font-bold text-white hover:text-indigo-50" */}
-					<p>{VscRocket}</p>
 					{navigation.map(link => (
 						<Link key={link.name} href={link.href}>
 							{link.name}

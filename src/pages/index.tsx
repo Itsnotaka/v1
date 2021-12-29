@@ -23,6 +23,7 @@ import {
 	SiWebpack,
 	SiYarn,
 } from 'react-icons/si';
+import RoadMap from '../components/RoadMap';
 
 let age = new Date().getUTCFullYear() - 2003;
 
@@ -52,7 +53,7 @@ const Home: NextPage = () => {
 						<h1 className="font-mit text-left font-medium text-2xl">
 							My Tech Stack 💻
 						</h1>
-						<p className="opacity-80"></p>
+
 						<ul className="grid grid-cols-3 sm:grid-cols-4 gap-4">
 							<ListItem icon={SiPostgresql} text="Postgres" />
 							<ListItem icon={SiReact} text="React.js" />
@@ -62,12 +63,17 @@ const Home: NextPage = () => {
 							<ListItem icon={SiAmazonaws} text="AWS" />
 							<ListItem icon={SiNextDotJs} text="Next.js" />
 							<ListItem icon={SiWebpack} text="Webpack" />
-
 							<ListItem icon={SiYarn} text="Yarn" />
 							<ListItem icon={SiTailwindcss} text="TailwindCSS" />
 							<ListItem icon={SiGit} text="Git" />
 							<ListItem icon={SiStyledComponents} text="styled-components" />
 						</ul>
+						<p></p>
+						<h1 className="font-mit text-left font-medium text-2xl">
+							How Did I End Up Here? 🤔
+						</h1>
+						<p></p>
+						<RoadMap />
 					</div>
 				</div>
 			</div>
