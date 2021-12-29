@@ -1,4 +1,3 @@
-import type {NextPage} from 'next';
 import Header from '../components/Header';
 import Typist from 'react-typist';
 
@@ -17,11 +16,19 @@ import {
 	SiWebpack,
 	SiYarn,
 } from 'react-icons/si';
+import {HiOutlineLocationMarker} from 'react-icons/hi';
+import {useLanyard, Data as LanyardData} from 'use-lanyard';
 import RoadMap from '../components/RoadMap';
 
 let age = new Date().getUTCFullYear() - 2003;
+interface Props {
+	lanyard: LanyardData;
+}
+export default function Home(props: Props) {
+	const {data: lanyard} = useLanyard('365733917090906113', {
+		fallbackData: props.lanyard,
+	});
 
-const Home: NextPage = () => {
 	return (
 		<>
 			<Header />
@@ -47,7 +54,6 @@ const Home: NextPage = () => {
 						<h1 className="font-mit text-left font-medium text-2xl">
 							My Tech Stack 💻
 						</h1>
-
 						<ul className="grid grid-cols-3 sm:grid-cols-4 gap-4">
 							<ListItem icon={SiPostgresql} text="Postgres" />
 							<ListItem icon={SiReact} text="React.js" />
@@ -73,6 +79,4 @@ const Home: NextPage = () => {
 			</div>
 		</>
 	);
-};
-
-export default Home;
+}

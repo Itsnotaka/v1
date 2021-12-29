@@ -1,5 +1,5 @@
 import React from 'react';
-import Document, {Head, Html} from 'next/document';
+import Document, {Head, Html, Main, NextScript} from 'next/document';
 
 export default class AkaDocument extends Document {
 	render() {
@@ -23,6 +23,11 @@ export default class AkaDocument extends Document {
 						rel="stylesheet"
 					/>
 				</Head>
+				<body>
+					<Main />
+					<NextScript />
+					<script async defer src="https://lab.alistair.cloud/latest.js" />
+				</body>
 			</Html>
 		);
 	}
