@@ -14,7 +14,6 @@ export default class AkaDocument extends Document {
 					/>
 					<meta name="theme-color" content="#000000" />
 					<meta
-					
 						name="description"
 						content="Min Chun Fu, a full-stack developer from Taiwan"
 					/>
