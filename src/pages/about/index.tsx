@@ -40,7 +40,7 @@ const about = () => {
 							musics as well.
 							<br/>
 							In Fact, according to Spotify, I spent 46,992 minutes
-							listening on Spotify.
+							listening music.
 						</p>
 						<span>
 							<h1 className="relative top-2 font-mit text-center font-bold text-2xl not-sr-only">
