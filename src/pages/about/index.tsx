@@ -6,6 +6,12 @@ import {ListItem} from '../../components/ListItems';
 import Image from 'next/image';
 import Banner from '../../../public/banner.jpg';
 import FavSongs from '../../components/favSongs';
+import useSWR from 'swr'
+
+function spotifyData() {
+	
+}
+  
 
 const about = () => {
 	return (
@@ -36,8 +42,9 @@ const about = () => {
 						</div>
 						<p className="relative text-left opacity-80 not-sr-only">
 							I am just an ordinary neighbourhood student who is into Economics
-							and Computer Science. Oh yeah, I listen to a wide variety of
-							musics as well.
+							and Computer Science.
+							<br/>
+							Oh yeah, I listen to a wide variety of musics as well. In Fact, according to spotify, I spent 
 						</p>
 						<span>
 							<h1 className="relative top-2 font-mit text-center font-bold text-2xl not-sr-only">
