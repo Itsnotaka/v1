@@ -10,7 +10,7 @@ const timeline = [
 	{
 		id: 1,
 		content: 'Started learning',
-		target: 'Node.JS',
+		target: 'Node.js',
 		href: '/',
 		date: 'May 01',
 		datetime: '2020-05-01',
@@ -20,7 +20,7 @@ const timeline = [
 	{
 		id: 2,
 		content: 'Started utilizing',
-		target: 'Typscript',
+		target: 'Typescript',
 		href: '/',
 		date: 'May 30',
 		datetime: '2020-05-30',
@@ -30,7 +30,7 @@ const timeline = [
 	{
 		id: 3,
 		content: 'Begin learning',
-		target: 'React',
+		target: 'React.js',
 		href: '/',
 		date: 'July 28',
 		datetime: '2020-07-28',
