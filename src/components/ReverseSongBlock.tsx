@@ -13,7 +13,7 @@ const ReverseSongBlock = (props: {
 				<p className="mt-1">{props.description}</p>
 			</div>
 			<div className="ml-4 flex-shrink-0">
-				<Image src={props.imageLink} sizes="32" />
+				<img src={props.imageLink} sizes="32" />
 			</div>
 		</div>
 	);

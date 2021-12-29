@@ -48,7 +48,8 @@ const about = () => {
 							</h1>
 						</span>
 						<FavSongs />
-						<SongBlock songTitle="" description="1" imageLink="../../../public/album_images/cityZoo.jpeg" />
+						<SongBlock songTitle="http" description="1" imageLink="https://i.scdn.co/image/ab67616d00001e02a86c7932c5072d2221907af1" />
+						<ReverseSongBlock songTitle="1" description="1" imageLink="https://i.scdn.co/image/ab67616d00001e02a86c7932c5072d2221907af1" />
 					</div>
 				</div>
 			</div>
