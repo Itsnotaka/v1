@@ -4,7 +4,7 @@ import {SiSpotify} from 'react-icons/si';
 
 export const DISCORD_ID = '365733917090906113';
 
-export function Song() {
+const Song = () => {
 	const {data: user} = useLanyard(DISCORD_ID);
 
 	const c =
@@ -37,3 +37,5 @@ export function Song() {
 		</a>
 	);
 }
+
+export default Song
