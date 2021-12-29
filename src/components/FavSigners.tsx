@@ -2,26 +2,24 @@ import React from 'react';
 
 const files = [
 	{
-		title: 'You',
+		title: '',
 		author: 'IU',
 		source: 'https://i.scdn.co/image/ab67616d00001e020d378c4756c4fc34b7d3eeaf',
-		preview_url:
-			'https://p.scdn.co/mp3-preview/d51060d2602318745fab4eae63da9856e11c472b?cid=774b29d4f13844c495f206cafdad9c86',
 	},
 	{
-		title: 'Through The Night',
+		title: '',
 		author: 'IU',
-		source: 'https://i.scdn.co/image/ab67616d00001e02582ef1f9cf429f07ee914a89',
+		source: 'https://i.scdn.co/image/ab67616d00001e020d378c4756c4fc34b7d3eeaf',
 	},
 	{
-		title: 'Blue',
-		author: 'Keshi',
-		source: 'https://i.scdn.co/image/ab67616d00001e027941a79c3108cedb1667b68d',
+		title: '',
+		author: 'IU',
+		source: 'https://i.scdn.co/image/ab67616d00001e020d378c4756c4fc34b7d3eeaf',
 	},
 	{
-		title: '倒流時間',
-		author: 'G.E.M',
-		source: 'https://i.scdn.co/image/ab67616d00001e02b29eba5b7f461cb84cb14c1b',
+		title: '',
+		author: 'IU',
+		source: 'https://i.scdn.co/image/ab67616d00001e020d378c4756c4fc34b7d3eeaf',
 	},
 ];
 

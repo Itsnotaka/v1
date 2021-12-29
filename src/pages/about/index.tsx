@@ -36,10 +36,11 @@ const about = () => {
 						</div>
 						<p className="relative text-left opacity-80 not-sr-only">
 							I am just an ordinary neighbourhood student who is into Economics
-							and Computer Science.
-							<br />
-							Oh yeah, I listen to a wide variety of musics as well. In Fact,
-							according to Spotify, I spent 46,992 minutes listening on Spotify.
+							and Computer Science. Oh yeah, I listen to a wide variety of
+							musics as well.
+							<br/>
+							In Fact, according to Spotify, I spent 46,992 minutes
+							listening on Spotify.
 						</p>
 						<span>
 							<h1 className="relative top-2 font-mit text-center font-bold text-2xl not-sr-only">
@@ -47,6 +48,11 @@ const about = () => {
 							</h1>
 						</span>
 						<FavSongs />
+						<span>
+							<h1 className="relative top-2 font-mit text-center font-bold text-2xl not-sr-only">
+								Some Of My Favorite Singers
+							</h1>
+						</span>
 						<FavSingers />
 					</div>
 				</div>
