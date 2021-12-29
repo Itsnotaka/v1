@@ -5,8 +5,7 @@ import Header from '../../components/Header';
 import Image from 'next/image';
 import Banner from '../../../public/banner.jpg';
 import FavSongs from '../../components/FavSongs';
-import SongBlock from '../../components/SongBlock';
-import ReverseSongBlock from '../../components/ReverseSongBlock';
+import FavSingers from '../../components/FavSigners';
 
 const about = () => {
 	return (
@@ -48,8 +47,7 @@ const about = () => {
 							</h1>
 						</span>
 						<FavSongs />
-						<SongBlock songTitle="http" description="1" imageLink="https://i.scdn.co/image/ab67616d00001e02a86c7932c5072d2221907af1" />
-						<ReverseSongBlock songTitle="1" description="1" imageLink="https://i.scdn.co/image/ab67616d00001e02a86c7932c5072d2221907af1" />
+						<FavSingers />
 					</div>
 				</div>
 			</div>
