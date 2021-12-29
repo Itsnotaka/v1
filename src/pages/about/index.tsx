@@ -1,4 +1,3 @@
-import next from 'next';
 import React from 'react';
 import Typist from 'react-typist';
 import Header from '../../components/Header';

@@ -1,8 +1,4 @@
 import type {NextPage} from 'next';
-import Head from 'next/head';
-import Image from 'next/image';
-import {useEffect, useState} from 'react';
-import ReactMarkdown from 'react-markdown';
 import Header from '../components/Header';
 import Typist from 'react-typist';
 
@@ -10,7 +6,6 @@ import {ListItem} from '../components/ListItems';
 import {
 	SiAmazonaws,
 	SiGit,
-	SiGithub,
 	SiGo,
 	SiNextdotjs as SiNextDotJs,
 	SiNodedotjs as SiNodeDotJs,
@@ -18,7 +13,6 @@ import {
 	SiReact,
 	SiStyledcomponents as SiStyledComponents,
 	SiTailwindcss,
-	SiTwitter,
 	SiTypescript,
 	SiWebpack,
 	SiYarn,
