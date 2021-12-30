@@ -81,7 +81,7 @@ export default function ContactForm() {
 										className={`absolute -inset-0.5 bg-gradient-to-r  rounded-lg blur opacity-75 group-hover:opacity-100 transition duration-1000 ${
 											submitted
 												? 'bg-emerald-300 animate-pulse'
-												: 'from-white to-gray-500 group-hover:from-pink-600 group-hover:to-purple-600'
+												: 'from-white to-gray-500 group-hover:from-pink-600 group-hover:to-blue-600'
 										} group-hover:duration-2000 animate-tilt`}
 									></div>
 									<button className="relative px-7 py-4 bg-black rounded-lg leading-none flex items-center divide-x divide-gray-600">
