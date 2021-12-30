@@ -14,7 +14,12 @@ const Home: NextPage = () => {
 				{/* We've used 3xl here, but feel free to try other max-widths based on your needs */}
 				<div className="max-w-3xl mx-auto">
 					<div className="space-y-4 text-center">
-						<div className="flex space-x-3"></div>
+						<div className="flex space-x-3">
+							<h1 className="font-mit font-normal text-4xl">
+								Storage Space
+							</h1>
+							
+						</div>
 					</div>
 				</div>
 			</div>

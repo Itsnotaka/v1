@@ -44,7 +44,7 @@ export default function Home(props: Props) {
 							Be passionate about your life, be interested in everything
 							surrounding you.
 						</Typist>
-						<p className=" text-left opacity-80 hover:opacity-100">
+						<p className=" text-lg text-left opacity-80 hover:opacity-100">
 							Alright let's do this one last time. My name is Min Chun Fu. I am
 							an ordinary {age} year old student. I was not bitten by a
 							radioactive spider and I am pretty sure you know the rest. My
@@ -68,11 +68,10 @@ export default function Home(props: Props) {
 							<ListItem icon={SiGit} text="Git" />
 							<ListItem icon={SiStyledComponents} text="styled-components" />
 						</ul>
-						<p></p>
+						
 						<h1 className="font-mit text-left font-medium text-2xl">
 							How Did I End Up Here? 🤔
 						</h1>
-						<p></p>
 						<RoadMap />
 					</div>
 				</div>

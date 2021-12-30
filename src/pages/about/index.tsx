@@ -33,7 +33,7 @@ const about = () => {
 								</span>
 							</div>
 						</div>
-						<p className="relative text-left opacity-80 not-sr-only">
+						<p className="relative text-lg text-left opacity-80 not-sr-only">
 							I am just an ordinary neighbourhood student who is into Economics
 							and Computer Science. Oh yeah, I listen to a wide variety of
 							musics as well.
