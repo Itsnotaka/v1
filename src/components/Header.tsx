@@ -8,6 +8,8 @@ import Song from './Song';
 const navigation = [
 	{name: '#', href: '/'},
 	{name: 'About', href: 'about'},
+	{name: 'Storage', href: 'storage'},
+	
 ];
 
 const Header = () => {
