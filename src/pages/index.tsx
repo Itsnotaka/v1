@@ -66,9 +66,9 @@ export default function Home(props: Props) {
 							<ListItem icon={SiNextDotJs} text="Next.js" />
 							<ListItem icon={SiWebpack} text="Webpack" />
 							<ListItem icon={SiYarn} text="Yarn" />
-							<ListItem icon={SiTailwindcss} text="TailwindCSS" />
+							<ListItem icon={SiTailwindcss} text="Tailwind CSS" />
 							<ListItem icon={SiGit} text="Git" />
-							<ListItem icon={SiStyledComponents} text="styled-components" />
+							<ListItem icon={SiStyledComponents} text="Styled Components" />
 						</ul>
 						
 						<h1 className="font-mit text-left font-medium text-2xl">
