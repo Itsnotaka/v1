@@ -19,7 +19,7 @@ const timeline = [
 	},
 	{
 		id: 2,
-		content: 'Started utilizing',
+		content: 'Started using',
 		target: 'Typescript',
 		href: '/',
 		date: 'May 30',
