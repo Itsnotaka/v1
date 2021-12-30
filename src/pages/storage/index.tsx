@@ -29,12 +29,16 @@ import {MdSignalCellularAlt} from 'react-icons/md';
 import {BsMedium} from 'react-icons/bs';
 import {AiOutlineBgColors} from 'react-icons/ai';
 import {RiStockFill} from 'react-icons/ri';
+import {IoCopy} from 'react-icons/io5';
+import NotificationCard from '../../components/NotificationCard';
 
 const Home: NextPage = () => {
 	const [dateState, setDateState] = useState(new Date());
+	const [showNotification, setShowNotification] = useState(false);
 	useEffect(() => {
 		setInterval(() => setDateState(new Date()), 30000);
 	}, []);
+
 	return (
 		<>
 			<Header />
@@ -44,11 +48,35 @@ const Home: NextPage = () => {
 					<div className="space-y-4 text-center">
 						<div className="flex space-x-3"></div>
 						<h1 className="font-mit font-bold text-4xl">Storage Space</h1>
+						<h3 className="font-mit font-bold text-xl">
+							{dateState.toLocaleString()}
+						</h3>
 						<h1 className=" text-lg font-bold text-left ">
 							Important Commands
 						</h1>
 						<h3 className=" text-lg font-bold text-left ">Undo Git Init</h3>
-						<ListItem icon={SiGit} text="rm -rf .git" />
+						<ul className="grid grid-cols-3 sm:grid-cols-4 gap-4 text-left"></ul>
+						<button
+							onClick={() => {
+								navigator.clipboard.writeText('rm -rf .git');
+								setShowNotification(true);
+								setTimeout(() => setShowNotification(false), 10000);
+							}}
+						>
+							{showNotification ? <NotificationCard /> : <></>}
+							<ListItem icon={IoCopy} text="rm -rf .git" />
+						</button>
+						<h3 className=" text-lg font-bold text-left ">Install TypeScript Globally</h3>
+						<button
+							onClick={() => {
+								navigator.clipboard.writeText('yarn global add typscript');
+								setShowNotification(true);
+								setTimeout(() => setShowNotification(false), 10000);
+							}}
+						>
+							{showNotification ? <NotificationCard /> : <></>}
+							<ListItem icon={IoCopy} text="yarn global add typscript" />
+						</button>
 						<h1 className=" text-lg font-bold text-left ">Go to...</h1>
 						<ul className="grid grid-cols-3 sm:grid-cols-4 gap-4 text-left">
 							<ListItem

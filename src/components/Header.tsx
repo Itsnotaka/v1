@@ -7,8 +7,8 @@ import Song from './Song';
 
 const navigation = [
 	{name: '#', href: '/'},
-	{name: 'About', href: 'about'},
-	{name: 'Storage', href: 'storage'},
+	{name: 'About', href: '/about'},
+	{name: 'Storage', href: '/storage'},
 	
 ];
 
