@@ -15,7 +15,7 @@ const GradientBar = () => {
 								</span>
 							</span>
 							<span className="pl-6 text-gray-100 group-hover:text-indigo-400 transition duration-1000">
-								Perter Parker
+								Peter Parker
 							</span>
 						</div>
 					</div>
