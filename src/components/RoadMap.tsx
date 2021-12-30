@@ -40,7 +40,7 @@ const timeline = [
 	{
 		id: 4,
 		content: 'Advanced to',
-		target: 'Next.js and Tailwind',
+		target: 'Next.js',
 		href: '/',
 		date: 'Aug 01',
 		datetime: '2020-08-01',
