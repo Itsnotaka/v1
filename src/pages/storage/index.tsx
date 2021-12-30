@@ -10,18 +10,13 @@ const Home: NextPage = () => {
 	return (
 		<>
 			<Header />
-			<div className="left-32 top-14 relative">
-				<h1 className="text-sm outline-4 outline-offset-2 font-bold text-teal-300">
-					Current time is{' '}
-					{dateState.toLocaleDateString('en-GB', {
-						day: 'numeric',
-						month: 'short',
-						year: 'numeric',
-					})}
-				</h1>
-				<h1 className="text-4xl font-medium font-mit">
-					My File Storage Space 🤩
-				</h1>
+			<div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+				{/* We've used 3xl here, but feel free to try other max-widths based on your needs */}
+				<div className="max-w-3xl mx-auto">
+					<div className="space-y-4 text-center">
+						<div className="flex space-x-3"></div>
+					</div>
+				</div>
 			</div>
 		</>
 	);
