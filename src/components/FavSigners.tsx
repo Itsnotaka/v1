@@ -36,6 +36,11 @@ const files = [
 		author: 'Justin Bieber',
 		source: 'https://i.scdn.co/image/ab676161000051748ae7f2aaa9817a704a87ea36',
 	},
+	{
+		title: '',
+		author: 'Lauv',
+		source: 'https://i.scdn.co/image/ab67616d00001e025355919e31efac9b14c45c49',
+	},
 ];
 
 const FavSingers = () => {
