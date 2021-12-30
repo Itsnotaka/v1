@@ -65,7 +65,7 @@ export default function ContactForm() {
 								htmlFor="email"
 								className="block text-sm font-medium text-left text-white"
 							>
-								What would you like to say?
+								What would you like to say to me?
 							</label>
 							<textarea
 								rows={4}
