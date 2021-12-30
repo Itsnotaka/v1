@@ -38,7 +38,7 @@ export default function NotificationCard() {
 									</div>
 									<div className="ml-4 flex-shrink-0 flex">
 										<button
-											className="bg-transparent rounded-md inline-flex focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-teal-200"
+											className="bg-near-black rounded-md inline-flex focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-teal-200"
 											onClick={() => {
 												setShow(false);
 											}}
