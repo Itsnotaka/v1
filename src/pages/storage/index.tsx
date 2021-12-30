@@ -180,7 +180,7 @@ const Home: NextPage = () => {
 						<ul className=" pb-32 relative grid grid-cols-3 sm:grid-cols-4 gap-4 text-left">
 							<ListItem
 								icon={SiBitcoin}
-								text="CoinMarketCap"
+								text="Coin Market Cap"
 								link="https://coinmarketcap.com/watchlist/"
 							/>
 							<ListItem
