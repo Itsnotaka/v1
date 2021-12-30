@@ -9,7 +9,7 @@ const GradientBar = () => {
 						<div className="absolute -inset-0.5 bg-gradient-to-r from-white to-gray-500 rounded-lg blur opacity-75 group-hover:opacity-100 transition duration-1000 group-hover:from-pink-600 group-hover:to-purple-600 group-hover:duration-2000 animate-tilt"></div>
 						<div className="relative px-7 py-4 bg-black rounded-lg leading-none flex items-center divide-x divide-gray-600">
 							<span className="flex items-center space-x-5">
-								{GiSpiderWeb({className: 'teal-200'})}
+								{GiSpiderWeb({className: 'w-6 h-6 teal-200'})}
 								<span className="pr-6 text-gray-100 group-hover:text-pink-600 duration-1000">
 									With great power comes great responsibility
 								</span>

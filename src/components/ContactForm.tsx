@@ -86,7 +86,7 @@ export default function ContactForm() {
 									></div>
 									<button className="relative px-7 py-4 bg-black rounded-lg leading-none flex items-center divide-x divide-gray-600">
 										<span className="flex items-center space-x-5">
-											{submitted ? '' : GiSpiderWeb({className: 'teal-200'})}
+											{submitted ? '' : GiSpiderWeb({className: 'w-6 h-6 teal-200'})}
 											<span className={`pr-6 font-medium ${submitted? "text-emerald-300 animate-pulse" : "text-gray-100 group-hover:text-pink-600 duration-1000"}`}>
 												{submitted
 													? 'Successfully Submitted'
