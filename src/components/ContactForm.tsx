@@ -15,7 +15,7 @@ export default function ContactForm() {
 					<div className=" bg-opacity-10 py-8 px-4 shadow sm:rounded-lg sm:px-10">
 						<form
 							className="space-y-6"
-							action="../api/form"
+							action="/api/form"
 							method="POST"
 							onSubmit={async event => {
 								event.preventDefault();
@@ -23,7 +23,6 @@ export default function ContactForm() {
 								const values = Object.fromEntries(
 									new FormData(event.target as HTMLFormElement).entries(),
 								);
-
 								const promise = fetcher<APIResponse<{sent: true}>>(
 									'/api/form',
 									{
@@ -81,20 +80,20 @@ export default function ContactForm() {
 									<div
 										className={`absolute -inset-0.5 bg-gradient-to-r  rounded-lg blur opacity-75 group-hover:opacity-100 transition duration-1000 ${
 											submitted
-												? 'bg-green-300'
+												? 'bg-emerald-300 animate-pulse'
 												: 'from-white to-gray-500 group-hover:from-pink-600 group-hover:to-purple-600'
 										} group-hover:duration-2000 animate-tilt`}
 									></div>
 									<button className="relative px-7 py-4 bg-black rounded-lg leading-none flex items-center divide-x divide-gray-600">
 										<span className="flex items-center space-x-5">
 											{submitted ? '' : GiSpiderWeb({className: 'teal-200'})}
-											<span className="pr-6 text-gray-100 group-hover:text-pink-600 duration-1000">
+											<span className={`pr-6 font-medium ${submitted? "text-emerald-300 animate-pulse" : "text-gray-100 group-hover:text-pink-600 duration-1000"}`}>
 												{submitted
 													? 'Successfully Submitted'
 													: 'Ready To Submit?'}
 											</span>
 										</span>
-										<span className="pl-6 text-gray-100 group-hover:text-indigo-400 transition duration-1000">
+										<span className={`pl-6 ${submitted? "text-emerald-300 animate-pulse" : "text-gray-100 group-hover:text-indigo-400 transition duration-1000"}`}>
 											{submitted
 												? BsCheckLg({className: 'teal-200'})
 												: BiRightArrow({className: 'teal-200'})}

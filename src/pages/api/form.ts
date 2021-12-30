@@ -1,11 +1,11 @@
-import {api} from '../server/api';
+import {api} from '../../server/api';
 import {z} from 'zod';
-import {DISCORD_WEBHOOK} from '../server/constants';
+import {DISCORD_WEBHOOK} from '../../server/constants';
 import {NextkitException} from 'nextkit';
 
 const schema = z.object({
 	email: z.string().email(),
-	body: z.string().max(500).min(3),
+	comment: z.string().max(500).min(3),
 });
 
 export default api({
@@ -16,20 +16,17 @@ export default api({
 			method: 'POST',
 			headers: {'Content-Type': 'application/json'},
 			body: JSON.stringify({
-				content: 'new email innit',
+				content: null,
 				embeds: [
 					{
-						description: body.body,
-						author: {
-							name: body.email,
-						},
+						title: 'You Got A New Message!',
+						url: 'https://www.kakaka.dev/',
+						description: `From ${body.email}`,
+						color: 11631615,
 						fields: [
 							{
-								name: 'ip',
-								value:
-									req.headers['x-forwarded-for'] ??
-									req.connection.remoteAddress ??
-									'unknown!?',
+								name: 'Message',
+								value: body.comment,
 							},
 						],
 					},
