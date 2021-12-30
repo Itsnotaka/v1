@@ -4,6 +4,7 @@ import Header from '../../components/Header';
 import {ListItem} from '../../components/ListItems';
 import {
 	SiApple,
+	SiBitcoin,
 	SiGit,
 	SiGithub,
 	SiHackerrank,
@@ -27,6 +28,7 @@ import {DiMongodb, DiMitlicence} from 'react-icons/di';
 import {MdSignalCellularAlt} from 'react-icons/md';
 import {BsMedium} from 'react-icons/bs';
 import {AiOutlineBgColors} from 'react-icons/ai';
+import {RiStockFill} from 'react-icons/ri';
 
 const Home: NextPage = () => {
 	const [dateState, setDateState] = useState(new Date());
@@ -121,7 +123,7 @@ const Home: NextPage = () => {
 						</ul>
 						<h1 className=" text-lg font-bold text-left ">Readings</h1>
 						<ul className="grid grid-cols-3 sm:grid-cols-4 gap-4 text-left">
-						<ListItem
+							<ListItem
 								icon={DiMitlicence}
 								text="MIT Typscript Course"
 								link="https://web.mit.edu/6.031/www/fa21"
@@ -165,6 +167,36 @@ const Home: NextPage = () => {
 								icon={VscRegex}
 								text="Regex Match All Characters Between Strings"
 								link="https://stackoverflow.com/questions/6109882/regex-match-all-characters-between-two-strings"
+							/>
+							<ListItem
+								icon={SiBitcoin}
+								text="Beginner Guide To Coin Base Pro"
+								link="https://hackernoon.com/beginners-guide-to-coinbase-pro-an-exchange-of-coinbase-to-trade-btc-eth-and-ltc-72f04eee8092"
+							/>
+						</ul>
+						<h1 className=" text-lg font-bold text-left">
+							Stock/Crypto Markets
+						</h1>
+						<ul className=" pb-32 relative grid grid-cols-3 sm:grid-cols-4 gap-4 text-left">
+							<ListItem
+								icon={SiBitcoin}
+								text="CoinMarketCap"
+								link="https://coinmarketcap.com/watchlist/"
+							/>
+							<ListItem
+								icon={SiBitcoin}
+								text="Coin Base Pro"
+								link="https://pro.coinbase.com/"
+							/>
+							<ListItem
+								icon={SiBitcoin}
+								text="Coin Base"
+								link="https://coinbase.com/"
+							/>
+							<ListItem
+								icon={RiStockFill}
+								text="Trading View"
+								link="https://www.tradingview.com/"
 							/>
 						</ul>
 					</div>
