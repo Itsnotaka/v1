@@ -16,8 +16,10 @@
     "dotenv": "^10.0.0",
     "got": "^12.0.0",
     "next": "12.0.7",
+    "nextkit": "^2.1.0",
     "react": "17.0.2",
     "react-dom": "17.0.2",
+    "react-hot-toast": "^2.1.1",
     "react-icons": "^4.3.1",
     "react-markdown": "^7.1.1",
     "react-typist": "^2.0.5",
@@ -25,7 +27,8 @@
     "swr": "^1.1.2",
     "tailwind-scrollbar-hide": "^1.1.7",
     "use-lanyard": "^1.0.3",
-    "xo": "^0.47.0"
+    "xo": "^0.47.0",
+    "zod": "^3.11.6"
   },
   "devDependencies": {
     "@types/node": "17.0.5",

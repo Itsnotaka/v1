@@ -19,6 +19,7 @@ import {
 import {HiOutlineLocationMarker} from 'react-icons/hi';
 import {useLanyard, Data as LanyardData} from 'use-lanyard';
 import RoadMap from '../components/RoadMap';
+import GradientBar from '../components/GradientBar';
 
 let age = new Date().getUTCFullYear() - 2003;
 interface Props {
@@ -44,6 +45,7 @@ export default function Home(props: Props) {
 							Be passionate about your life, be interested in everything
 							surrounding you.
 						</Typist>
+						<GradientBar />
 						<p className=" text-lg text-left opacity-80 hover:opacity-100">
 							Alright let's do this one last time. My name is Min Chun Fu. I am
 							an ordinary {age} year old student. I was not bitten by a

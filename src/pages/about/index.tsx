@@ -15,9 +15,7 @@ const about = () => {
 				<div className="max-w-3xl mx-auto">
 					<div className="space-y-4 text-center">
 						<div className="flex space-x-3"></div>
-						<Typist className="text-left font-mit font-bold text-4xl">
-							About
-						</Typist>
+						<Typist className="font-mit font-bold text-4xl">About</Typist>
 						<div className="text-opacity-40 text-white hover:text-opacity-100 transition-all">
 							<Image
 								alt="A day in Hong Kong with my friends"
