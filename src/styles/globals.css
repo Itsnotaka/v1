@@ -19,8 +19,5 @@ body {
 }
 
 p {
-	display: flex;
-	text-align: center;
-
-	@apply text-lg leading-8;
+	@apply text-lg
 }
