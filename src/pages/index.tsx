@@ -56,7 +56,7 @@ export default function Home(props: Props) {
 						<h1 className="font-mit text-left font-medium text-2xl">
 							My Tech Stack 💻
 						</h1>
-						<ul className="grid grid-cols-3 sm:grid-cols-4 gap-4">
+						<ul className="text-left grid grid-cols-3 sm:grid-cols-4 gap-4">
 							<ListItem icon={SiPostgresql} text="Postgres" />
 							<ListItem icon={SiReact} text="React.js" />
 							<ListItem icon={SiNodeDotJs} text="Node.js" />
