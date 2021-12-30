@@ -1,3 +1,4 @@
+import Image from 'next/image';
 import React from 'react';
 
 const files = [
@@ -52,10 +53,11 @@ const FavSingers = () => {
 			{files.map(file => (
 				<li key={file.source} className="relative">
 					<div className="group block w-full aspect-w-10 aspect-h-10 shadow-lg rounded-md focus-within:ring-2 focus-within:ring-offset-2 overflow-hidden">
-						<img
+						<div className="object-cover pointer-events-none transition-all duration-500 group-hover:scale-110"></div>
+						<Image
 							src={file.source}
 							alt=""
-							className="object-cover pointer-events-none transition-all duration-500 group-hover:scale-110"
+							layout='fill'
 						/>
 					</div>
 					<p className="opacity-70 mt-2 block text-sm font-medium text-white truncate pointer-events-none">
