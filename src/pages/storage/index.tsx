@@ -1,11 +1,10 @@
 import type {NextPage} from 'next';
 import {useEffect, useState} from 'react';
-import Header from '../../components/Header';
+import Header from '../../components/_Header';
 import {ListItem} from '../../components/ListItems';
 import {
 	SiApple,
 	SiBitcoin,
-	SiGit,
 	SiGithub,
 	SiHackerrank,
 	SiJavascript,
@@ -13,6 +12,7 @@ import {
 	SiMongodb,
 	SiReact,
 	SiStackoverflow,
+	SiTailwindcss,
 	SiTypescript,
 } from 'react-icons/si';
 import {
@@ -66,7 +66,9 @@ const Home: NextPage = () => {
 							{showNotification ? <NotificationCard /> : <></>}
 							<ListItem icon={IoCopy} text="rm -rf .git" />
 						</button>
-						<h3 className=" text-lg font-bold text-left ">Install TypeScript Globally</h3>
+						<h3 className=" text-lg font-bold text-left ">
+							Install TypeScript Globally
+						</h3>
 						<button
 							onClick={() => {
 								navigator.clipboard.writeText('yarn global add typscript');
@@ -83,6 +85,11 @@ const Home: NextPage = () => {
 								icon={SiGithub}
 								text="Discord Image Downloader"
 								link="https://github.com/Seklfreak/discord-image-downloader-go"
+							/>
+							<ListItem
+								icon={SiTailwindcss}
+								text="Tailwind UI"
+								link="https://tailwindui.com/"
 							/>
 							<ListItem
 								icon={VscSymbolColor}

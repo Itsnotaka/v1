@@ -1,4 +1,4 @@
-import Header from '../components/Header';
+import Header from '../components/_Header';
 import Typist from 'react-typist';
 
 import {ListItem} from '../components/ListItems';

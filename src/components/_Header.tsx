@@ -9,7 +9,7 @@ const navigation = [
 	{name: '#', href: '/'},
 	{name: 'About', href: '/about'},
 	{name: 'Storage', href: '/storage'},
-	
+	{name: 'Chat', href: '/chat'},
 ];
 
 const Header = () => {
@@ -46,7 +46,7 @@ const Header = () => {
 						</button>
 
 						<div
-							className={`hidden ml-10 space-x-8 lg:block underline decoration-teal-300/80 hover:decoration-white duration-300`}
+							className={`font-medium hidden ml-10 space-x-8 lg:block underline decoration-teal-300/80 hover:decoration-white duration-300`}
 						>
 							{/*className="opacity-50 hover:opacity-100 text-base font-mit font-bold text-white hover:text-indigo-50*/}
 

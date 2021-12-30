@@ -1,6 +1,6 @@
 import React from 'react';
 import Typist from 'react-typist';
-import Header from '../../components/Header';
+import Header from '../../components/_Header';
 import Image from 'next/image';
 import Banner from '../../../public/banner.jpg';
 import FavSongs from '../../components/FavSongs';
