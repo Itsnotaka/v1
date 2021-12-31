@@ -80,7 +80,7 @@ const Home: NextPage = () => {
 							<ListItem icon={IoCopy} text="yarn global add typscript" />
 						</button>
 						<h1 className=" text-lg font-bold text-left ">Go to...</h1>
-						<ul className="grid grid-cols-3 sm:grid-cols-4 gap-4 text-left">
+						<ul className="grid grid-cols-3 sm:grid-cols-4 gap-4 gap-y-4 text-left">
 							<ListItem
 								icon={SiGithub}
 								text="Discord Image Downloader"
@@ -157,7 +157,7 @@ const Home: NextPage = () => {
 							/>
 						</ul>
 						<h1 className=" text-lg font-bold text-left ">Readings</h1>
-						<ul className="grid grid-cols-3 sm:grid-cols-4 gap-4 text-left">
+						<ul className="grid grid-cols-3 sm:grid-cols-4 gap-4 gap-y-4 text-left">
 							<ListItem
 								icon={DiMitlicence}
 								text="MIT Typscript Course"
