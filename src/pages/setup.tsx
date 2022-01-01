@@ -29,7 +29,7 @@ const hardware = [
 		href: 'https://www.razer.com/razer-optical-switch',
 	},
 	{
-		product: 'Logi MX Master 3',
+		product: 'Logitech MX Master 3',
 		type: 'Mouse',
 		description: 'Gray Colorway, MacOS Edition',
 		href: 'https://www.logitech.com/en-us/mx/mx-for-mac.html',

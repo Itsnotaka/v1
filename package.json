@@ -29,6 +29,7 @@
 		"@heroicons/react": "^1.0.5",
 		"@tailwindcss/aspect-ratio": "^0.4.0",
 		"@tailwindcss/forms": "^0.4.0",
+		"dayjs": "^1.10.7",
 		"dotenv": "^10.0.0",
 		"next": "12.0.7",
 		"nextkit": "^2.1.0",
@@ -51,13 +52,13 @@
 		"autoprefixer": "^10.4.0",
 		"eslint": "^8.6.0",
 		"eslint-config-next": "^12.0.7",
-		"postcss": "^8.4.5",
-		"tailwindcss": "^3.0.7",
-		"typescript": "4.5.4",
 		"eslint-config-xo": "^0.39.0",
 		"eslint-config-xo-react": "^0.25.0",
 		"eslint-config-xo-typescript": "^0.48.0",
-		"eslint-plugin-tailwindcss": "^3.0.2"
+		"eslint-plugin-tailwindcss": "^3.0.2",
+		"postcss": "^8.4.5",
+		"tailwindcss": "^3.0.7",
+		"typescript": "4.5.4"
 	},
 	"packageManager": "yarn@3.1.1"
 }
