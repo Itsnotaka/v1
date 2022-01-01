@@ -18,8 +18,8 @@ import {
 } from 'react-icons/si';
 import {HiOutlineLocationMarker} from 'react-icons/hi';
 import {useLanyard, Data as LanyardData} from 'use-lanyard';
-import RoadMap from '../components/RoadMap';
-import GradientBar from '../components/GradientBar';
+import RoadMap from '../components/home/RoadMap';
+import GradientBar from '../components/home/GradientBar';
 import Head from 'next/head';
 
 let age = new Date().getUTCFullYear() - 2003;

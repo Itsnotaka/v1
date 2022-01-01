@@ -1,6 +1,6 @@
 import Head from 'next/head';
 import Typist from 'react-typist';
-import ContactForm from '../../components/ContactForm';
+import ContactForm from '../../components/chat/ContactForm';
 import Header from '../../components/_Header';
 
 const Chat = () => {

@@ -3,7 +3,7 @@ import {Transition} from '@headlessui/react';
 import Link from 'next/link';
 import {useState, Fragment, useEffect} from 'react';
 import {useTimeoutFn} from 'react-use';
-import Song from './Song';
+import Song from './about/Song';
 
 const navigation = [
 	{name: `#`, href: '/'},

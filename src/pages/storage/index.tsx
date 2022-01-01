@@ -30,7 +30,7 @@ import {BsMedium} from 'react-icons/bs';
 import {AiOutlineBgColors} from 'react-icons/ai';
 import {RiStockFill} from 'react-icons/ri';
 import {IoCopy} from 'react-icons/io5';
-import NotificationCard from '../../components/NotificationCard';
+import NotificationCard from '../../components/storage/NotificationCard';
 import Head from 'next/head';
 
 const Home: NextPage = () => {

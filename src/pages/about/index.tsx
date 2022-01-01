@@ -3,8 +3,8 @@ import Typist from 'react-typist';
 import Header from '../../components/_Header';
 import Image from 'next/image';
 import Banner from '../../../public/banner.jpg';
-import FavSongs from '../../components/FavSongs';
-import FavSingers from '../../components/FavSigners';
+import FavSongs from '../../components/about/FavSongs';
+import FavSingers from '../../components/about/FavSigners';
 import Head from 'next/head';
 
 const about = () => {

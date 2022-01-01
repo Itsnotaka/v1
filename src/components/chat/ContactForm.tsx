@@ -3,7 +3,7 @@ import {BsCheckLg} from 'react-icons/bs';
 import {GiSpiderWeb} from 'react-icons/gi';
 import {BiRightArrow} from 'react-icons/bi';
 import toast from 'react-hot-toast';
-import {fetcher} from '../util/fetcher';
+import {fetcher} from '../../util/fetcher';
 import {APIResponse} from 'nextkit';
 
 export default function ContactForm() {
