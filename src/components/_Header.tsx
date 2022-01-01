@@ -1,22 +1,24 @@
 /* This example requires Tailwind CSS v2.0+ */
 import {Transition} from '@headlessui/react';
 import Link from 'next/link';
-import {useState, Fragment} from 'react';
+import {useState, Fragment, useEffect} from 'react';
 import {useTimeoutFn} from 'react-use';
 import Song from './Song';
 
 const navigation = [
-	{name: '#', href: '/'},
-	{name: 'About', href: '/about'},
-	{name: 'Storage', href: '/storage'},
-	{name: 'Chat', href: '/chat'},
+	{name: `#`, href: '/'},
+	{name: `About`, href: '/about'},
+	{name: `Storage`, href: '/storage'},
+	{name: `Setup`, href: '/setup'},
+	{name: `Chat`, href: '/chat'},
 ];
 
 const Header = () => {
 	let [isShowing, setIsShowing] = useState(true);
 	let [, , resetIsShowing] = useTimeoutFn(() => setIsShowing(true), 500);
+
 	return (
-		<header className=" max-h-auto">
+		<header className="max-h-auto">
 			<nav className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8" aria-label="Top">
 				<div className="w-full py-6 flex items-center justify-between border-b border-near-black lg:border-none">
 					<div className="flex items-center ">
