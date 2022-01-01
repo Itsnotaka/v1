@@ -97,6 +97,11 @@ const Home: NextPage = () => {
 								link="https://tailwindui.com/"
 							/>
 							<ListItem
+								icon={SiTailwindcss}
+								text="Postsrc Tailwind Component"
+								link="https://postsrc.com/components"
+							/>
+							<ListItem
 								icon={VscSymbolColor}
 								text="Carbon"
 								link="https://carbon.now.sh/"
