@@ -1,5 +1,5 @@
 import type {NextPage} from 'next';
-import {useEffect, useState} from 'react';
+import {useState} from 'react';
 import Header from '../components/_Header';
 import {ListItem} from '../components/ListItems';
 import {
@@ -24,7 +24,7 @@ import {
 import {CgLinear} from 'react-icons/cg';
 import {FaBookOpen} from 'react-icons/fa';
 import {GrProductHunt} from 'react-icons/gr';
-import {DiMongodb, DiMitlicence} from 'react-icons/di';
+import {DiMongodb, DiMitlicence, DiJavascript} from 'react-icons/di';
 import {MdSignalCellularAlt} from 'react-icons/md';
 import {BsMedium} from 'react-icons/bs';
 import {AiOutlineBgColors} from 'react-icons/ai';
@@ -182,6 +182,11 @@ const Home: NextPage = () => {
 								icon={SiJavascript}
 								text="Javascript Error Handling"
 								link="https://javascript.plainenglish.io/javascript-errors-exceptions-handling-43ae983cbbb3"
+							/>
+							<ListItem
+								icon={SiJavascript}
+								text="2022 Javascript feature preview"
+								link="https://p42.ai/blog/2021-12-31/es2022-preview-10-exciting-javascript-language-features-from-2021"
 							/>
 							<ListItem
 								icon={VscDebugBreakpointLog}
