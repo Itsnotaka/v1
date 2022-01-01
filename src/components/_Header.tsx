@@ -41,7 +41,7 @@ const Header = () => {
 								leaveFrom="opacity-100 rotate-0 scale-100 "
 								leaveTo="opacity-0 scale-95 "
 							>
-								<Image
+								<img
 									className="w-auto h-10 rounded-xl opacity-50 hover:opacity-100"
 									src="https://cdn.discordapp.com/attachments/711900255456591892/925362074773749760/Untitled_1.png"
 									alt=""
