@@ -89,13 +89,13 @@ const Setup = () => {
 	return (
 		<>
 			<Head>
-				<title>Home - Daniel Fu</title>
+				<title>Setup - Daniel Fu</title>
 			</Head>
 			<Header />
 			<div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
 				{/* We've used 3xl here, but feel free to try other max-widths based on your needs */}
 				<div className="max-w-3xl mx-auto">
-					<div className="space-y-4 text-center">
+					<div className="space-y-4 text-left">
 						<div className="flex space-x-3"></div>
 						<h1 className="font-mit font-bold text-4xl">Setup</h1>
 						<h3 className="pb-2 mt-4 text-xl font-bold tracking-widest border-b border-gray-300 dark:border-gray-700">
@@ -114,7 +114,7 @@ const Setup = () => {
 								<Card key={item.product} {...item} />
 							))}
 						</div>
-						<h1 className="pt-10 pb-10 font-mit font-medium text-sm">
+						<h1 className="pt-10 pb-10 font-mit text-center font-medium text-sm">
 							© 2021 Min Chun Fu. All rights reserved.
 						</h1>
 					</div>

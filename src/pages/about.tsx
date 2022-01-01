@@ -2,7 +2,7 @@ import React from 'react';
 import Typist from 'react-typist';
 import Header from '../components/_Header';
 import Image from 'next/image';
-import Banner from '../../../public/banner.jpg';
+import Banner from '../../public/banner.jpg';
 import FavSongs from '../components/about/FavSongs';
 import FavSingers from '../components/about/FavSigners';
 import Head from 'next/head';
@@ -17,9 +17,12 @@ const about = () => {
 			<div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
 				{/* We've used 3xl here, but feel free to try other max-widths based on your needs */}
 				<div className="max-w-3xl mx-auto">
-					<div className="space-y-4 text-center">
+					<div className="space-y-4 text-left">
 						<div className="flex space-x-3"></div>
 						<Typist className="font-mit font-bold text-4xl">About</Typist>
+						<h3 className="pb-2 mt-4 text-xl font-bold tracking-widest border-b border-gray-300 dark:border-gray-700">
+							A short overview of me
+						</h3>
 						<div className="text-opacity-40 text-white hover:text-opacity-100 transition-all">
 							<Image
 								alt="A day in Hong Kong with my friends"
@@ -55,7 +58,7 @@ const about = () => {
 							</h1>
 						</span>
 						<FavSingers />
-						<h1 className="pt-10 pb-10 font-mit font-medium text-sm">
+						<h1 className="pt-10 pb-10 font-mit font-medium text-center text-sm">
 							© 2021 Min Chun Fu. All rights reserved.
 						</h1>
 					</div>
