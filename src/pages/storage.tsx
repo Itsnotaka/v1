@@ -43,26 +43,29 @@ const Home: NextPage = () => {
 				<title>Storage - Daniel Fu</title>
 			</Head>
 			<Header />
-			<div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+			<div className="px-4 mx-auto max-w-7xl sm:px-6 lg:px-8">
 				{/* We've used 3xl here, but feel free to try other max-widths based on your needs */}
-				<div className="max-w-3xl mx-auto">
+				<div className="mx-auto max-w-3xl">
 					<div className="space-y-4 text-center">
 						<div className="flex space-x-3"></div>
-						<Typist className="font-mit font-bold text-4xl text-left">
+						<Typist className="font-mit text-4xl font-bold text-left">
 							Storage Space
 						</Typist>
-						<h3 className=" text-left pb-2 mt-4 text-xl font-bold tracking-widest border-b border-gray-300 dark:border-gray-700">
+						<h3 className="pb-2 mt-4 text-xl font-bold tracking-widest text-left border-b border-gray-300 dark:border-gray-700">
 							A cool storage place where I store import links and articles to
 							read
 						</h3>
 						<h1 className="text-xl font-bold text-left ">Important Commands</h1>
 						<h3 className="text-lg font-bold text-left ">Undo Git Init</h3>
-						<ul className="grid grid-cols-3 sm:grid-cols-4 gap-4 text-left"></ul>
+						<ul className="grid grid-cols-3 gap-4 text-left sm:grid-cols-4"></ul>
 						<button
 							onClick={() => {
+								// eslint-disable-next-line @typescript-eslint/no-floating-promises
 								navigator.clipboard.writeText('rm -rf .git');
 								setShowNotification(true);
-								setTimeout(() => setShowNotification(false), 10000);
+								setTimeout(() => {
+									setShowNotification(false);
+								}, 10000);
 							}}
 						>
 							{showNotification ? <NotificationCard /> : <></>}
@@ -75,7 +78,9 @@ const Home: NextPage = () => {
 							onClick={() => {
 								navigator.clipboard.writeText('yarn global add typescript');
 								setShowNotification(true);
-								setTimeout(() => setShowNotification(false), 10000);
+								setTimeout(() => {
+									setShowNotification(false);
+								}, 10000);
 							}}
 						>
 							{showNotification ? <NotificationCard /> : <></>}
@@ -86,7 +91,7 @@ const Home: NextPage = () => {
 							/>
 						</button>
 						<h1 className="text-lg font-bold text-left ">Go to...</h1>
-						<ul className="grid grid-cols-3 sm:grid-cols-4 gap-4 gap-y-4 text-left">
+						<ul className="grid grid-cols-3 gap-4 gap-y-4 text-left sm:grid-cols-4">
 							<ListItem
 								icon={SiGithub}
 								text="Discord Image Downloader"
@@ -168,7 +173,7 @@ const Home: NextPage = () => {
 							/>
 						</ul>
 						<h1 className="text-lg font-bold text-left ">Readings</h1>
-						<ul className="grid grid-cols-3 sm:grid-cols-4 gap-4 gap-y-4 text-left">
+						<ul className="grid grid-cols-3 gap-4 gap-y-4 text-left sm:grid-cols-4">
 							<ListItem
 								icon={DiMitlicence}
 								text="MIT Typscript Course"
@@ -228,7 +233,7 @@ const Home: NextPage = () => {
 						<h1 className="text-lg font-bold text-left">
 							Stock/Crypto Markets
 						</h1>
-						<ul className="pb-32 relative grid grid-cols-3 sm:grid-cols-4 gap-4 text-left">
+						<ul className="grid relative grid-cols-3 gap-4 pb-32 text-left sm:grid-cols-4">
 							<ListItem
 								icon={SiBitcoin}
 								text="Coin Market Cap"
@@ -250,7 +255,7 @@ const Home: NextPage = () => {
 								link="https://www.tradingview.com/"
 							/>
 						</ul>
-						<h1 className="pt-10 pb-10 font-mit font-medium text-center text-sm">
+						<h1 className="pt-10 pb-10 font-mit text-sm font-medium text-center">
 							© 2021 Min Chun Fu. All rights reserved.
 						</h1>
 					</div>
