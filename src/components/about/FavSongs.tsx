@@ -1,6 +1,5 @@
 import Image from 'next/image';
-import React from 'react';
-
+import React, {useState} from 'react';
 const files = [
 	{
 		title: '螢火',
@@ -45,6 +44,16 @@ const files = [
 ];
 
 const FavSongs = () => {
+	const [statsOpen, setStatsOpen] = useState(false);
+
+	const close = () => {
+		setStatsOpen(false);
+	};
+
+	const open = () => {
+		setStatsOpen(true);
+	};
+
 	return (
 		<ul
 			role="list"

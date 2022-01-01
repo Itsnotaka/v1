@@ -43,7 +43,7 @@ const about = () => {
 							and Computer Science. Oh yeah, I listen to a wide variety of
 							musics as well.
 							<br />
-							In Fact, according to Spotify, I spent 46,992 minutes listening
+							In fact, according to Spotify, I spent 46,992 minutes listening
 							music.
 						</p>
 						<span>
@@ -51,7 +51,9 @@ const about = () => {
 								Some Of My Favorite Songs
 							</h1>
 						</span>
+
 						<FavSongs />
+
 						<span>
 							<h1 className="relative top-2 font-mit text-center font-bold text-2xl not-sr-only">
 								Some Of My Favorite Singers
