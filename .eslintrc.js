@@ -10,7 +10,6 @@ module.exports = {
 		'plugin:react/recommended',
 		'xo',
 		'xo-typescript',
-		'xo-react',
 		'plugin:tailwindcss/recommended',
 	],
 	parser: '@typescript-eslint/parser',
