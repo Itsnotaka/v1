@@ -1,29 +1,26 @@
 import Head from 'next/head';
 import Link from 'next/link';
-import React from 'react';
 import {GiSpiderWeb} from 'react-icons/gi';
 
-const Page404 = () => {
-	return (
-		<>
-			<Head>
-				<title>404 - Daniel Fu</title>
-			</Head>
-			<div className="min-h-full px-4 py-16 sm:px-6 sm:py-24 md:grid md:place-items-center lg:px-8">
-				<div className="max-w-max mx-auto">
-					<main className="sm:flex">
-						<p className="text-4xl font-extrabold text-white sm:text-5xl">
-							404 :(
-						</p>
-						<div className="sm:ml-6">
-							<div className="sm:border-l sm:border-gray-200 sm:pl-6">
-								<h1 className="text-4xl max-w-xl font-extrabold text-violet-400 tracking-tight sm:text-5xl">
-									Uh oh, looks like we couldn't find what you were looking for!
-								</h1>
-								<p className="mt-1 text-base text-gray-300">
-									Please check the link and try again.
-								</p>
-							</div>
+const Offline = () => (
+	<>
+		<Head>
+			<title>Error - Daniel Fu</title>
+		</Head>
+		<div className="min-h-full px-4 py-16 sm:px-6 sm:py-24 md:grid md:place-items-center lg:px-8">
+			<div className="max-w-max mx-auto">
+				<main className="sm:flex">
+					<span className="text-4xl font-extrabold text-white sm:text-5xl">
+						Error
+					</span>
+					<div className="relative sm:ml-6 justify-center">
+						<div className="sm:border-l sm:border-gray-200 sm:pl-6">
+							<h1 className="text-4xl max-w-xl font-extrabold text-violet-400 tracking-tight sm:text-5xl">
+								Uh oh, seems like you encountered an error
+							</h1>
+							<p className="mt-1 text-base text-gray-300">
+								Click the button to go back to the home page.
+							</p>
 							<div className="grid gap-8 items-start justify-start pt-10">
 								<div className="relative group">
 									<div
@@ -42,11 +39,11 @@ const Page404 = () => {
 								</div>
 							</div>
 						</div>
-					</main>
-				</div>
+					</div>
+				</main>
 			</div>
-		</>
-	);
-};
+		</div>
+	</>
+);
 
-export default Page404;
+export default Offline;
