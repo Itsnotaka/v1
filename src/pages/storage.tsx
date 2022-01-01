@@ -32,6 +32,7 @@ import {RiStockFill} from 'react-icons/ri';
 import {IoCopy} from 'react-icons/io5';
 import NotificationCard from '../components/storage/NotificationCard';
 import Head from 'next/head';
+import Typist from 'react-typist';
 
 const Home: NextPage = () => {
 	const [showNotification, setShowNotification] = useState(false);
@@ -47,9 +48,9 @@ const Home: NextPage = () => {
 				<div className="max-w-3xl mx-auto">
 					<div className="space-y-4 text-center">
 						<div className="flex space-x-3"></div>
-						<h1 className="font-mit font-bold text-4xl text-left">
+						<Typist className="font-mit font-bold text-4xl text-left">
 							Storage Space
-						</h1>
+						</Typist>
 						<h3 className=" text-left pb-2 mt-4 text-xl font-bold tracking-widest border-b border-gray-300 dark:border-gray-700">
 							A cool storage place where I store import links and articles to
 							read

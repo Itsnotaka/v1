@@ -1,8 +1,9 @@
 import Head from 'next/head';
 import React from 'react';
+import Typist from 'react-typist';
 import Card from '../components/setup/Card';
 import Header from '../components/_Header';
-import {SiApple} from 'react-icons/si';
+
 const hardware = [
 	{
 		product: `Macbook Pro`,
@@ -77,7 +78,7 @@ const Setup = () => {
 				<div className="max-w-3xl mx-auto">
 					<div className="space-y-4 text-left">
 						<div className="flex space-x-3"></div>
-						<h1 className="font-mit font-bold text-4xl">Setup</h1>
+						<Typist className="font-mit font-bold text-4xl">Setup</Typist>
 						<span className="mt-4 text-xl font-bold tracking-widest ">
 							An overview of my setup
 						</span>
