@@ -2,10 +2,10 @@ import Head from 'next/head';
 import React from 'react';
 import Card from '../components/setup/Card';
 import Header from '../components/_Header';
-
+import {SiApple} from 'react-icons/si';
 const hardware = [
 	{
-		product: 'Macbook Pro',
+		product: `Macbook Pro`,
 		type: 'Laptop',
 		description: '13-inch, 256GB SSD, 8 GB RAM, Apple M1 chip',
 		href: 'https://www.apple.com/macbook-pro/',
@@ -86,7 +86,10 @@ const Setup = () => {
 						</h3>
 						<div className="grid my-2 gap-2">
 							{hardware.map(item => (
-								<Card key={item.product} {...item} />
+								<Card
+									key={item.product}
+									{...item}
+								/>
 							))}
 						</div>
 						<h3 className="pb-2 mt-4 text-xl font-bold tracking-widest border-b border-gray-300 dark:border-gray-700">
