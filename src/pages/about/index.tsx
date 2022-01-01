@@ -5,10 +5,14 @@ import Image from 'next/image';
 import Banner from '../../../public/banner.jpg';
 import FavSongs from '../../components/FavSongs';
 import FavSingers from '../../components/FavSigners';
+import Head from 'next/head';
 
 const about = () => {
 	return (
 		<>
+			<Head>
+				<title>About - Daniel Fu</title>
+			</Head>
 			<Header />
 			<div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
 				{/* We've used 3xl here, but feel free to try other max-widths based on your needs */}

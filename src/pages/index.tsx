@@ -20,6 +20,7 @@ import {HiOutlineLocationMarker} from 'react-icons/hi';
 import {useLanyard, Data as LanyardData} from 'use-lanyard';
 import RoadMap from '../components/RoadMap';
 import GradientBar from '../components/GradientBar';
+import Head from 'next/head';
 
 let age = new Date().getUTCFullYear() - 2003;
 interface Props {
@@ -32,6 +33,9 @@ export default function Home(props: Props) {
 
 	return (
 		<>
+			<Head>
+				<title>Home - Daniel Fu</title>
+			</Head>
 			<Header />
 			<div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
 				{/* We've used 3xl here, but feel free to try other max-widths based on your needs */}
@@ -70,7 +74,7 @@ export default function Home(props: Props) {
 							<ListItem icon={SiGit} text="Git" />
 							<ListItem icon={SiStyledComponents} text="Styled Components" />
 						</ul>
-						
+
 						<h1 className="font-mit text-left font-medium text-2xl">
 							How Did I End Up Here? 🤔
 						</h1>

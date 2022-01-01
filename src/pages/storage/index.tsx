@@ -31,6 +31,7 @@ import {AiOutlineBgColors} from 'react-icons/ai';
 import {RiStockFill} from 'react-icons/ri';
 import {IoCopy} from 'react-icons/io5';
 import NotificationCard from '../../components/NotificationCard';
+import Head from 'next/head';
 
 const Home: NextPage = () => {
 	const [dateState, setDateState] = useState(new Date());
@@ -41,6 +42,9 @@ const Home: NextPage = () => {
 
 	return (
 		<>
+			<Head>
+				<title>Storage - Daniel Fu</title>
+			</Head>
 			<Header />
 			<div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
 				{/* We've used 3xl here, but feel free to try other max-widths based on your needs */}
