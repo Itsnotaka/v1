@@ -7,7 +7,9 @@ export const DISCORD_ID = '365733917090906113';
 const Song = () => {
 	const [dateState, setDateState] = useState(new Date());
 	useEffect(() => {
-		setInterval(() => setDateState(new Date()), 30000);
+		setInterval(() => {
+			setDateState(new Date());
+		}, 30000);
 	}, []);
 
 	const {data: user} = useLanyard(DISCORD_ID);

@@ -44,29 +44,27 @@ const files = [
 	},
 ];
 
-const FavSingers = () => {
-	return (
-		<ul
-			role="list"
-			className="grid grid-cols-2 gap-x-4 gap-y-8 sm:grid-cols-3 sm:gap-x-6 lg:grid-cols-4 xl:gap-x-8"
-		>
-			{files.map(file => (
-				<li key={file.source} className="relative">
-					<button className="group block w-full aspect-w-10 aspect-h-10 shadow-lg rounded-md focus-within:ring-2 focus-within:ring-offset-2 overflow-hidden">
-						<a className="object-cover pointer-events-none transition-all duration-500 group-hover:scale-110 grayscale-[30%] group-hover:grayscale-0">
-							<Image src={file.source} alt="" height={640} width={640} />
-						</a>
-					</button>
-					<p className="opacity-70 mt-2 block text-sm font-medium text-white truncate pointer-events-none">
-						{file.author}
-					</p>
-					<p className="opacity-70 mt-2 block text-sm font-medium text-white truncate pointer-events-none h-20">
-						{file.title}
-					</p>
-				</li>
-			))}
-		</ul>
-	);
-};
+const FavSingers = () => (
+	<ul
+		role="list"
+		className="grid grid-cols-2 gap-x-4 gap-y-8 sm:grid-cols-3 sm:gap-x-6 lg:grid-cols-4 xl:gap-x-8"
+	>
+		{files.map(file => (
+			<li key={file.source} className="relative">
+				<button className="group block overflow-hidden w-full rounded-md focus-within:ring-2 focus-within:ring-offset-2 shadow-lg aspect-w-10 aspect-h-10">
+					<a className="object-cover grayscale-[30%] group-hover:grayscale-0 transition-all duration-500 group-hover:scale-110 pointer-events-none">
+						<Image src={file.source} alt="" height={640} width={640} />
+					</a>
+				</button>
+				<p className="block mt-2 text-sm font-medium text-white truncate opacity-70 pointer-events-none">
+					{file.author}
+				</p>
+				<p className="block mt-2 h-20 text-sm font-medium text-white truncate opacity-70 pointer-events-none">
+					{file.title}
+				</p>
+			</li>
+		))}
+	</ul>
+);
 
 export default FavSingers;

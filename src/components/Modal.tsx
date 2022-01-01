@@ -12,7 +12,7 @@ interface Props {
 	setIsOpen: Dispatch<SetStateAction<boolean>>;
 	title: ReactNode;
 	children: ReactNode;
-	focusRef?: MutableRefObject<HTMLElement | null>;
+	focusRef?: MutableRefObject<HTMLElement | undefined>;
 	description?: string;
 }
 

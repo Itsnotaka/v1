@@ -22,7 +22,7 @@ import RoadMap from '../components/home/RoadMap';
 import GradientBar from '../components/home/GradientBar';
 import Head from 'next/head';
 
-let age = new Date().getUTCFullYear() - 2003;
+const age = new Date().getUTCFullYear() - 2003;
 interface Props {
 	lanyard: LanyardData;
 }
@@ -37,15 +37,15 @@ export default function Home(props: Props) {
 				<title>Home - Daniel Fu</title>
 			</Head>
 			<Header />
-			<div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+			<div className="px-4 mx-auto max-w-7xl sm:px-6 lg:px-8">
 				{/* We've used 3xl here, but feel free to try other max-widths based on your needs */}
-				<div className="max-w-3xl mx-auto">
+				<div className="mx-auto max-w-3xl">
 					<div className="space-y-4 text-center">
 						<div className="flex space-x-3"></div>
-						<h1 className="font-mit font-bold text-4xl">
+						<h1 className="font-mit text-4xl font-bold">
 							Hello, I am Daniel 👋
 						</h1>
-						<Typist className="relative text-lg font-medium top-2 underline">
+						<Typist className="relative top-2 text-lg font-medium underline">
 							Be passionate about your life, be interested in everything
 							surrounding you.
 						</Typist>
@@ -57,10 +57,10 @@ export default function Home(props: Props) {
 							favorite quote is "think about why obvious questions are obvious,
 							that makes you understand how to solve complex problems"
 						</p>
-						<h1 className="font-mit text-left font-medium text-2xl">
+						<h1 className="font-mit text-2xl font-medium text-left">
 							My Tech Stack 💻
 						</h1>
-						<ul className="text-left grid grid-cols-3 sm:grid-cols-4 gap-4">
+						<ul className="grid grid-cols-3 gap-4 text-left sm:grid-cols-4">
 							<ListItem icon={SiPostgresql} text="Postgres" />
 							<ListItem icon={SiReact} text="React.js" />
 							<ListItem icon={SiNodeDotJs} text="Node.js" />
@@ -75,11 +75,11 @@ export default function Home(props: Props) {
 							<ListItem icon={SiStyledComponents} text="Styled Components" />
 						</ul>
 
-						<h1 className="font-mit text-left font-medium text-2xl">
+						<h1 className="font-mit text-2xl font-medium text-left">
 							How Did I End Up Here? 🤔
 						</h1>
 						<RoadMap />
-						<h1 className="pt-10 pb-10 font-mit font-medium text-sm">
+						<h1 className="pt-10 pb-10 font-mit text-sm font-medium">
 							© 2021 Min Chun Fu. All rights reserved.
 						</h1>
 					</div>

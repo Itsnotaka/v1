@@ -13,9 +13,9 @@ export default function NotificationCard() {
 			{/* Global notification live region, render this permanently at the end of the document */}
 			<div
 				aria-live="assertive"
-				className="fixed inset-0 flex items-end px-4 py-6 pointer-events-none sm:p-6 sm:items-start"
+				className="flex fixed inset-0 items-end py-6 px-4 pointer-events-none sm:items-start sm:p-6"
 			>
-				<div className="w-full flex flex-col items-center space-y-4 sm:items-end">
+				<div className="flex flex-col items-center space-y-4 w-full sm:items-end">
 					{/* Notification panel, dynamically insert this into the live region when it needs to be displayed */}
 					<Transition
 						show={show}
@@ -27,18 +27,18 @@ export default function NotificationCard() {
 						leaveFrom="opacity-100"
 						leaveTo="opacity-0"
 					>
-						<div className="max-w-sm w-full bg-near-black shadow-lg rounded-lg pointer-events-auto ring-1 ring-black ring-opacity-5 overflow-hidden">
+						<div className="overflow-hidden w-full max-w-sm bg-near-black rounded-lg ring-1 ring-black shadow-lg pointer-events-auto ring-opacity-5">
 							<div className="p-4">
 								<div className="flex items-center">
-									<div className="w-0 flex-1 flex justify-between">
+									<div className="flex flex-1 justify-between w-0">
 										<span>{IoCopy({className: 'text-emerald-300'})}</span>
-										<p className="w-0 flex-1 text-sm font-medium text-white opacity-90">
+										<p className="flex-1 w-0 text-sm font-medium text-white opacity-90">
 											Text Copied To Clipboard
 										</p>
 									</div>
-									<div className="ml-4 flex-shrink-0 flex">
+									<div className="flex shrink-0 ml-4">
 										<button
-											className="bg-near-black rounded-md inline-flex focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-teal-200"
+											className="inline-flex bg-near-black rounded-md focus:outline-none focus:ring-2 focus:ring-teal-200 focus:ring-offset-2"
 											onClick={() => {
 												setShow(false);
 											}}

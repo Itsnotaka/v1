@@ -66,49 +66,47 @@ const software = [
 		href: 'https://code.visualstudio.com/',
 	},
 ];
-const Setup = () => {
-	return (
-		<>
-			<Head>
-				<title>Setup - Daniel Fu</title>
-			</Head>
-			<Header />
-			<div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-				{/* We've used 3xl here, but feel free to try other max-widths based on your needs */}
-				<div className="max-w-3xl mx-auto">
-					<div className="space-y-4 text-left">
-						<div className="flex space-x-3"></div>
-						<Typist className="font-mit font-bold text-4xl">Setup</Typist>
-						<span className="mt-4 text-xl font-bold tracking-widest ">
+const Setup = () => (
+	<>
+		<Head>
+			<title>Setup - Daniel Fu</title>
+		</Head>
+		<Header />
+		<div className="px-4 mx-auto max-w-7xl sm:px-6 lg:px-8">
+			{/* We've used 3xl here, but feel free to try other max-widths based on your needs */}
+			<div className="mx-auto max-w-3xl">
+				<div className="space-y-4 text-left">
+					<div className="flex space-x-3"></div>
+					<Typist className="font-mit text-4xl font-bold">Setup</Typist>
+					<span className="mt-4 text-xl font-bold tracking-widest ">
 							An overview of my setup
-						</span>
-						<h3 className="pb-2 mt-4 text-xl font-bold tracking-widest border-b border-gray-300 dark:border-gray-700">
+					</span>
+					<h3 className="pb-2 mt-4 text-xl font-bold tracking-widest border-b border-gray-300 dark:border-gray-700">
 							HARDWARE
-						</h3>
-						<div className="grid my-2 gap-2">
-							{hardware.map(item => (
-								<Card
-									key={item.product}
-									{...item}
-								/>
-							))}
-						</div>
-						<h3 className="pb-2 mt-4 text-xl font-bold tracking-widest border-b border-gray-300 dark:border-gray-700">
-							SOFTWARE
-						</h3>
-						<div className="grid sm:grid-cols-2 md:grid-cols-4 my-2 gap-2">
-							{software.map(item => (
-								<Card key={item.product} {...item} />
-							))}
-						</div>
-						<h1 className="pt-10 pb-10 font-mit text-center font-medium text-sm">
-							© 2021 Min Chun Fu. All rights reserved.
-						</h1>
+					</h3>
+					<div className="grid gap-2 my-2">
+						{hardware.map(item => (
+							<Card
+								key={item.product}
+								{...item}
+							/>
+						))}
 					</div>
+					<h3 className="pb-2 mt-4 text-xl font-bold tracking-widest border-b border-gray-300 dark:border-gray-700">
+							SOFTWARE
+					</h3>
+					<div className="grid gap-2 my-2 sm:grid-cols-2 md:grid-cols-4">
+						{software.map(item => (
+							<Card key={item.product} {...item} />
+						))}
+					</div>
+					<h1 className="pt-10 pb-10 font-mit text-sm font-medium text-center">
+							© 2021 Min Chun Fu. All rights reserved.
+					</h1>
 				</div>
 			</div>
-		</>
-	);
-};
+		</div>
+	</>
+);
 
 export default Setup;
