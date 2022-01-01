@@ -40,6 +40,7 @@ const Song = () => {
 			<span>
 				<SiSpotify />
 			</span>
+			<span>{dateState.toLocaleString()}</span>
 		</a>
 	);
 };

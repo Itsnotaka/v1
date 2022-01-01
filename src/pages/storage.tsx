@@ -47,7 +47,13 @@ const Home: NextPage = () => {
 				<div className="max-w-3xl mx-auto">
 					<div className="space-y-4 text-center">
 						<div className="flex space-x-3"></div>
-						<h1 className="font-mit font-bold text-4xl">Storage Space</h1>
+						<h1 className="font-mit font-bold text-4xl text-left">
+							Storage Space
+						</h1>
+						<h3 className=" text-left pb-2 mt-4 text-xl font-bold tracking-widest border-b border-gray-300 dark:border-gray-700">
+							A cool storage place where I store import links and articles to
+							read
+						</h3>
 						<h1 className="text-xl font-bold text-left ">Important Commands</h1>
 						<h3 className="text-lg font-bold text-left ">Undo Git Init</h3>
 						<ul className="grid grid-cols-3 sm:grid-cols-4 gap-4 text-left"></ul>
@@ -59,7 +65,7 @@ const Home: NextPage = () => {
 							}}
 						>
 							{showNotification ? <NotificationCard /> : <></>}
-							<ListItem icon={IoCopy} text="rm -rf .git" />
+							<ListItem icon={IoCopy} text="rm -rf .git" css="font-semibold" />
 						</button>
 						<h3 className="text-lg font-bold text-left ">
 							Install TypeScript Globally
@@ -72,7 +78,11 @@ const Home: NextPage = () => {
 							}}
 						>
 							{showNotification ? <NotificationCard /> : <></>}
-							<ListItem icon={IoCopy} text="yarn global add typescript" />
+							<ListItem
+								icon={IoCopy}
+								text="yarn global add typescript"
+								css="font-semibold"
+							/>
 						</button>
 						<h1 className="text-lg font-bold text-left ">Go to...</h1>
 						<ul className="grid grid-cols-3 sm:grid-cols-4 gap-4 gap-y-4 text-left">

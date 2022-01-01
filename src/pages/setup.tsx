@@ -7,41 +7,26 @@ const hardware = [
 	{
 		product: 'Macbook Pro',
 		type: 'Laptop',
-		description: '16 in, 1TB SSD, 16 GB RAM, Intel i9, AMD Radeon 5500M',
+		description: '13-inch, 256GB SSD, 8 GB RAM, Apple M1 chip',
 		href: 'https://www.apple.com/macbook-pro/',
 	},
 	{
-		product: 'ZSA Moonlander',
-		type: 'Keyboard',
-		description:
-			'White Colorway, Kailh Silver (Linear) Keyswitches, ePBT "Less, but better" Keycaps',
-		href: 'https://www.zsa.io/moonlander/',
-	},
-	{
-		product: 'KBD67 Lite',
-		type: 'Keyboard',
-		description:
-			'White Colorway, Zilent (Tactile) Keyswitches, GMK "Dots" Keycaps',
-		href: 'https://kbdfans.com/products/kbd67lite',
-	},
-	{
-		product: 'Glorious GMMK Pro',
-		type: 'Keyboard',
-		description:
-			'White Colorway, Tealios V2 (Linear) Keyswitches, GMK "Taro" Keycaps',
-		href: 'https://www.pcgamingrace.com/products/glorious-gmmk-pro-75-barebone-white',
-	},
-	{
-		product: 'Glorious Model O',
+		product: 'Apple Mouse',
 		type: 'Mouse',
-		description: 'Matte White Colorway, Wireless Edition',
-		href: 'https://www.pcgamingrace.com/products/glorious-model-o-wireless-matte-white',
+		description: 'White Colorway',
+		href: 'https://www.apple.com/shop/product/MK2E3AM',
 	},
 	{
-		product: 'Logi MX Keys',
-		type: 'Mouse',
-		description: 'Gray Colorway, MacOS Edition',
-		href: 'https://www.logitech.com/en-us/mx/mx-for-mac.html',
+		product: 'Apple Keyboard',
+		type: 'Keyboard',
+		description: 'White Colorway, with Touch ID, M1 Edition',
+		href: 'https://www.apple.com/shop/product/MK293LL',
+	},
+	{
+		product: 'RΛZΞR Huntsman',
+		type: 'Keyboard',
+		description: 'Mercury/White Colorway, Optic Keyswitches',
+		href: 'https://www.razer.com/razer-optical-switch',
 	},
 	{
 		product: 'Logi MX Master 3',
@@ -63,21 +48,16 @@ const software = [
 		type: 'Git Client',
 		href: 'https://www.gitkraken.com/',
 	},
-	{product: 'iTerm 2', type: 'Terminal', href: 'https://iterm2.com/'},
-	{
-		product: 'WebStorm',
-		type: 'JavaScript IDE',
-		href: 'https://www.jetbrains.com/webstorm/',
-	},
+	{product: 'Hyper', type: 'Terminal', href: 'https://hyper.is/'},
 	{
 		product: 'GoLand',
 		type: 'Golang IDE',
 		href: 'https://www.jetbrains.com/goland/',
 	},
 	{
-		product: 'PyCharm',
-		type: 'Python IDE',
-		href: 'https://www.jetbrains.com/pycharm/',
+		product: 'CLion',
+		type: 'C++ IDE',
+		href: 'https://www.jetbrains.com/clion/',
 	},
 	{
 		product: 'VSCode',
@@ -98,6 +78,9 @@ const Setup = () => {
 					<div className="space-y-4 text-left">
 						<div className="flex space-x-3"></div>
 						<h1 className="font-mit font-bold text-4xl">Setup</h1>
+						<span className="mt-4 text-xl font-bold tracking-widest ">
+							An overview of my setup
+						</span>
 						<h3 className="pb-2 mt-4 text-xl font-bold tracking-widest border-b border-gray-300 dark:border-gray-700">
 							HARDWARE
 						</h3>
