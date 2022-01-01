@@ -7,7 +7,7 @@ const Page404 = () => {
 			<Head>
 				<title>404 - Daniel Fu</title>
 			</Head>
-			<div className=" min-h-full px-4 py-16 sm:px-6 sm:py-24 md:grid md:place-items-center lg:px-8">
+			<div className="min-h-full px-4 py-16 sm:px-6 sm:py-24 md:grid md:place-items-center lg:px-8">
 				<div className="max-w-max mx-auto">
 					<main className="sm:flex">
 						<p className="text-4xl font-extrabold text-white sm:text-5xl">

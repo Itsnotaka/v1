@@ -34,11 +34,7 @@ import NotificationCard from '../../components/NotificationCard';
 import Head from 'next/head';
 
 const Home: NextPage = () => {
-	const [dateState, setDateState] = useState(new Date());
 	const [showNotification, setShowNotification] = useState(false);
-	useEffect(() => {
-		setInterval(() => setDateState(new Date()), 30000);
-	}, []);
 
 	return (
 		<>
@@ -52,13 +48,8 @@ const Home: NextPage = () => {
 					<div className="space-y-4 text-center">
 						<div className="flex space-x-3"></div>
 						<h1 className="font-mit font-bold text-4xl">Storage Space</h1>
-						<h3 className="font-mit font-bold text-xl">
-							{dateState.toLocaleString()}
-						</h3>
-						<h1 className=" text-lg font-bold text-left ">
-							Important Commands
-						</h1>
-						<h3 className=" text-lg font-bold text-left ">Undo Git Init</h3>
+						<h1 className="text-xl font-bold text-left ">Important Commands</h1>
+						<h3 className="text-lg font-bold text-left ">Undo Git Init</h3>
 						<ul className="grid grid-cols-3 sm:grid-cols-4 gap-4 text-left"></ul>
 						<button
 							onClick={() => {
@@ -70,20 +61,20 @@ const Home: NextPage = () => {
 							{showNotification ? <NotificationCard /> : <></>}
 							<ListItem icon={IoCopy} text="rm -rf .git" />
 						</button>
-						<h3 className=" text-lg font-bold text-left ">
+						<h3 className="text-lg font-bold text-left ">
 							Install TypeScript Globally
 						</h3>
 						<button
 							onClick={() => {
-								navigator.clipboard.writeText('yarn global add typscript');
+								navigator.clipboard.writeText('yarn global add typescript');
 								setShowNotification(true);
 								setTimeout(() => setShowNotification(false), 10000);
 							}}
 						>
 							{showNotification ? <NotificationCard /> : <></>}
-							<ListItem icon={IoCopy} text="yarn global add typscript" />
+							<ListItem icon={IoCopy} text="yarn global add typescript" />
 						</button>
-						<h1 className=" text-lg font-bold text-left ">Go to...</h1>
+						<h1 className="text-lg font-bold text-left ">Go to...</h1>
 						<ul className="grid grid-cols-3 sm:grid-cols-4 gap-4 gap-y-4 text-left">
 							<ListItem
 								icon={SiGithub}
@@ -160,7 +151,7 @@ const Home: NextPage = () => {
 								link="https://www.hackerrank.com/contests"
 							/>
 						</ul>
-						<h1 className=" text-lg font-bold text-left ">Readings</h1>
+						<h1 className="text-lg font-bold text-left ">Readings</h1>
 						<ul className="grid grid-cols-3 sm:grid-cols-4 gap-4 gap-y-4 text-left">
 							<ListItem
 								icon={DiMitlicence}
@@ -213,10 +204,10 @@ const Home: NextPage = () => {
 								link="https://hackernoon.com/beginners-guide-to-coinbase-pro-an-exchange-of-coinbase-to-trade-btc-eth-and-ltc-72f04eee8092"
 							/>
 						</ul>
-						<h1 className=" text-lg font-bold text-left">
+						<h1 className="text-lg font-bold text-left">
 							Stock/Crypto Markets
 						</h1>
-						<ul className=" pb-32 relative grid grid-cols-3 sm:grid-cols-4 gap-4 text-left">
+						<ul className="pb-32 relative grid grid-cols-3 sm:grid-cols-4 gap-4 text-left">
 							<ListItem
 								icon={SiBitcoin}
 								text="Coin Market Cap"
@@ -238,7 +229,7 @@ const Home: NextPage = () => {
 								link="https://www.tradingview.com/"
 							/>
 						</ul>
-						<h1 className=" pt-10 pb-10 font-mit font-medium text-sm">
+						<h1 className="pt-10 pb-10 font-mit font-medium text-sm">
 							© 2021 Min Chun Fu. All rights reserved.
 						</h1>
 					</div>

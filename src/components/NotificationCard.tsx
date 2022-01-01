@@ -32,7 +32,7 @@ export default function NotificationCard() {
 								<div className="flex items-center">
 									<div className="w-0 flex-1 flex justify-between">
 										<span>{IoCopy({className: 'text-emerald-300'})}</span>
-										<p className=" w-0 flex-1 text-sm font-medium text-white opacity-90">
+										<p className="w-0 flex-1 text-sm font-medium text-white opacity-90">
 											Text Copied To Clipboard
 										</p>
 									</div>

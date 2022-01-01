@@ -1,10 +1,15 @@
-import React from 'react';
+import React, {useEffect, useState} from 'react';
 import {useLanyard} from 'use-lanyard';
 import {SiSpotify} from 'react-icons/si';
 
 export const DISCORD_ID = '365733917090906113';
 
 const Song = () => {
+	const [dateState, setDateState] = useState(new Date());
+	useEffect(() => {
+		setInterval(() => setDateState(new Date()), 30000);
+	}, []);
+
 	const {data: user} = useLanyard(DISCORD_ID);
 
 	const c =
@@ -17,6 +22,7 @@ const Song = () => {
 				<span>
 					<SiSpotify />
 				</span>
+				<span>{dateState.toLocaleString()}</span>
 			</p>
 		);
 	}
@@ -36,6 +42,6 @@ const Song = () => {
 			</span>
 		</a>
 	);
-}
+};
 
-export default Song
+export default Song;
