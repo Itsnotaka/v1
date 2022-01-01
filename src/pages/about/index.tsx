@@ -55,6 +55,9 @@ const about = () => {
 							</h1>
 						</span>
 						<FavSingers />
+						<h1 className=" pt-10 pb-10 font-mit font-medium text-sm">
+							© 2021 Min Chun Fu. All rights reserved.
+						</h1>
 					</div>
 				</div>
 			</div>
