@@ -25,7 +25,7 @@ const hardware = [
 	{
 		product: 'RΛZΞR Huntsman',
 		type: 'Keyboard',
-		description: 'Mercury/White Colorway, Optic Keyswitches',
+		description: 'Mercury/White Colorway, Optic Key Switches',
 		href: 'https://www.razer.com/razer-optical-switch',
 	},
 	{
