@@ -191,6 +191,11 @@ const Home: NextPage = () => {
 								link="https://medium.com/techloop/an-introduction-to-backend-development-and-rest-apis-b1a1a978821f"
 							/>
 							<ListItem
+								icon={SiGithub}
+								text="Footlocker Bot Code"
+								link="https://github.com/ceodavee/footlocker.js"
+							/>
+							<ListItem
 								icon={SiYoutube}
 								text="CP - Steps and Mistakes"
 								link="https://www.youtube.com/watch?v=bVKHRtafgPc"
