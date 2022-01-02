@@ -14,6 +14,7 @@ import {
 	SiStackoverflow,
 	SiTailwindcss,
 	SiTypescript,
+	SiYoutube,
 } from 'react-icons/si';
 import {
 	VscSymbolColor,
@@ -188,6 +189,11 @@ const Home: NextPage = () => {
 								icon={BsMedium}
 								text="Backend and REST API"
 								link="https://medium.com/techloop/an-introduction-to-backend-development-and-rest-apis-b1a1a978821f"
+							/>
+							<ListItem
+								icon={SiYoutube}
+								text="CP - Steps and Mistakes"
+								link="https://www.youtube.com/watch?v=bVKHRtafgPc"
 							/>
 							<ListItem
 								icon={SiJavascript}
