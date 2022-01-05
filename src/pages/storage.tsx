@@ -186,6 +186,11 @@ const Home: NextPage = () => {
 								link="https://www.thisdot.co/blog/clean-up-your-code-with-design-patterns-in-javascript"
 							/>
 							<ListItem
+								icon={SiJavascript}
+								text="How Javascript Works"
+								link="https://blog.devgenius.io/how-javascript-works-behind-the-scenes-88c546173f32"
+							/>
+							<ListItem
 								icon={BsMedium}
 								text="Backend and REST API"
 								link="https://medium.com/techloop/an-introduction-to-backend-development-and-rest-apis-b1a1a978821f"
