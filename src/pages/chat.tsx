@@ -14,7 +14,7 @@ const Chat = () => (
 			<div className="mx-auto max-w-3xl">
 				<div className="space-y-4 text-center">
 					<div className="flex space-x-3"></div>
-					<Typist className="font-mit text-4xl font-bold">
+					<Typist className="font-mit text-4xl font-bold" cursor={{hideWhenDone: false}}>
 							Let's Chat...💬
 					</Typist>
 					<h3 className="text-lg font-bold">Feel free to ask me anything!</h3>
