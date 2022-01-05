@@ -15,6 +15,7 @@ import {
 	SiTailwindcss,
 	SiTypescript,
 	SiYoutube,
+	SiLoop,
 } from 'react-icons/si';
 import {
 	VscSymbolColor,
@@ -25,7 +26,7 @@ import {
 import {CgLinear} from 'react-icons/cg';
 import {FaBookOpen} from 'react-icons/fa';
 import {GrProductHunt} from 'react-icons/gr';
-import {DiMongodb, DiMitlicence, DiJavascript} from 'react-icons/di';
+import {DiMongodb, DiMitlicence} from 'react-icons/di';
 import {MdSignalCellularAlt} from 'react-icons/md';
 import {BsMedium} from 'react-icons/bs';
 import {AiOutlineBgColors} from 'react-icons/ai';
@@ -131,7 +132,7 @@ const Home: NextPage = () => {
 							/>
 							<ListItem
 								icon={GrProductHunt}
-								text="Proxyman"
+								text="Proxy man"
 								link="https://proxyman.io/"
 							/>
 							<ListItem
@@ -177,7 +178,7 @@ const Home: NextPage = () => {
 						<ul className="grid grid-cols-3 gap-4 gap-y-4 text-left sm:grid-cols-4">
 							<ListItem
 								icon={DiMitlicence}
-								text="MIT Typscript Course"
+								text="MIT Typescript Course"
 								link="https://web.mit.edu/6.031/www/fa21"
 							/>
 							<ListItem
@@ -189,6 +190,11 @@ const Home: NextPage = () => {
 								icon={SiJavascript}
 								text="How Javascript Works"
 								link="https://blog.devgenius.io/how-javascript-works-behind-the-scenes-88c546173f32"
+							/>
+							<ListItem
+								icon={SiLoop}
+								text="Concurrency and multi-thread"
+								link="https://blog.devgenius.io/concurrency-multi-threading-multi-processing-asynchronous-programming-and-event-loop-1b8df9fa6c20"
 							/>
 							<ListItem
 								icon={BsMedium}
@@ -227,7 +233,7 @@ const Home: NextPage = () => {
 							/>
 							<ListItem
 								icon={SiTypescript}
-								text="Typscript Deep Dive"
+								text="Typescript Deep Dive"
 								link="https://basarat.gitbook.io/typescript/"
 							/>
 							<ListItem
