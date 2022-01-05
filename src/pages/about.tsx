@@ -18,7 +18,7 @@ const about = () => (
 			<div className="mx-auto max-w-3xl">
 				<div className="space-y-4 text-left">
 					<div className="flex space-x-3"></div>
-					<Typist className="font-mit text-4xl font-bold">About</Typist>
+					<Typist className="font-mit text-4xl font-bold" cursor={{hideWhenDone: false}}>About</Typist>
 					<h3 className="pb-2 mt-4 text-xl font-bold tracking-widest border-b border-gray-300 dark:border-gray-700">
 							A short overview of me
 					</h3>

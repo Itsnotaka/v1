@@ -50,7 +50,7 @@ const Home: NextPage = () => {
 				<div className="mx-auto max-w-3xl">
 					<div className="space-y-4 text-center">
 						<div className="flex space-x-3"></div>
-						<Typist className="font-mit text-4xl font-bold text-left">
+						<Typist cursor={{hideWhenDone: false}} className="font-mit text-4xl font-bold text-left">
 							Storage Space
 						</Typist>
 						<h3 className="pb-2 mt-4 text-xl font-bold tracking-widest text-left border-b border-gray-300 dark:border-gray-700">

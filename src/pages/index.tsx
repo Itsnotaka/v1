@@ -45,7 +45,7 @@ export default function Home(props: Props) {
 						<h1 className="font-mit text-4xl font-bold">
 							Hello, I am Daniel 👋
 						</h1>
-						<Typist className="relative top-2 text-lg font-medium underline">
+						<Typist cursor={{hideWhenDone: false}} className="relative top-2 text-lg font-medium underline">
 							Be passionate about your life, be interested in everything
 							surrounding you.
 						</Typist>
