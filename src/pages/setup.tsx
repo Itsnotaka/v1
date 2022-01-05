@@ -77,7 +77,7 @@ const Setup = () => (
 			<div className="mx-auto max-w-3xl">
 				<div className="space-y-4 text-left">
 					<div className="flex space-x-3"></div>
-					<Typist cursor={{hideWhenDone: false}} className="font-mit text-4xl font-bold">Setup</Typist>
+					<Typist cursor={{hideWhenDone: true}} className="font-mit text-4xl font-bold">Setup</Typist>
 					<span className="mt-4 text-xl font-bold tracking-widest ">
 							An overview of my setup
 					</span>
