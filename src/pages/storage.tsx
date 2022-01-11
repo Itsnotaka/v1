@@ -31,10 +31,13 @@ import {MdSignalCellularAlt} from 'react-icons/md';
 import {BsMedium} from 'react-icons/bs';
 import {AiOutlineBgColors} from 'react-icons/ai';
 import {RiStockFill} from 'react-icons/ri';
-import {IoCopy} from 'react-icons/io5';
+import {IoCopy, IoLogoCss3} from 'react-icons/io5';
 import NotificationCard from '../components/storage/NotificationCard';
 import Head from 'next/head';
 import Typist from 'react-typist';
+import Goto from '../components/storage/Goto';
+import Readings from '../components/storage/Reading';
+import CryptoReading from '../components/storage/CryptoReading';
 
 const Home: NextPage = () => {
 	const [showNotification, setShowNotification] = useState(false);
@@ -50,7 +53,10 @@ const Home: NextPage = () => {
 				<div className="mx-auto max-w-3xl">
 					<div className="space-y-4 text-center">
 						<div className="flex space-x-3"></div>
-						<Typist cursor={{hideWhenDone: true}} className="font-mit text-4xl font-bold text-left">
+						<Typist
+							cursor={{hideWhenDone: true}}
+							className="font-mit text-4xl font-bold text-left"
+						>
 							Storage Space
 						</Typist>
 						<h3 className="pb-2 mt-4 text-xl font-bold tracking-widest text-left border-b border-gray-300 dark:border-gray-700">
@@ -94,188 +100,17 @@ const Home: NextPage = () => {
 						</button>
 						<h1 className="text-lg font-bold text-left ">Go to...</h1>
 						<ul className="grid grid-cols-3 gap-4 gap-y-4 text-left sm:grid-cols-4">
-							<ListItem
-								icon={SiGithub}
-								text="Discord Image Downloader"
-								link="https://github.com/Seklfreak/discord-image-downloader-go"
-							/>
-							<ListItem
-								icon={SiTailwindcss}
-								text="Tailwind UI"
-								link="https://tailwindui.com/"
-							/>
-							<ListItem
-								icon={SiTailwindcss}
-								text="Postsrc Tailwind Component"
-								link="https://postsrc.com/components"
-							/>
-							<ListItem
-								icon={VscSymbolColor}
-								text="Carbon"
-								link="https://carbon.now.sh/"
-							/>
-							<ListItem
-								icon={CgLinear}
-								text="Linear"
-								link="https://linear.app/"
-							/>
-							<ListItem
-								icon={FaBookOpen}
-								text="Learn X by doing Y"
-								link="https://aquadzn.github.io/learn-x-by-doing-y/"
-							/>
-
-							<ListItem
-								icon={VscDiff}
-								text="Diff Checker"
-								link="https://www.diffchecker.com/diff"
-							/>
-							<ListItem
-								icon={GrProductHunt}
-								text="Proxy man"
-								link="https://proxyman.io/"
-							/>
-							<ListItem
-								icon={DiMongodb}
-								text="Humongous"
-								link="https://www.humongous.io/"
-							/>
-
-							<ListItem
-								icon={SiApple}
-								text="Captive Apple"
-								link="http://captive.apple.com/"
-							/>
-
-							<ListItem
-								icon={MdSignalCellularAlt}
-								text="Codex Proxy Admin Panel"
-								link="https://billing-cryptedlabs.com/"
-							/>
-
-							<ListItem
-								icon={AiOutlineBgColors}
-								text="Color Hunt"
-								link="https://colorhunt.co/"
-							/>
-							<ListItem
-								icon={SiMacos}
-								text="MacOS Wallpaper"
-								link="https://dynamicwallpaper.club/gallery"
-							/>
-							<ListItem
-								icon={SiReact}
-								text="React Hotkeys Hook"
-								link="https://www.npmjs.com/package/react-hotkeys-hook"
-							/>
-							<ListItem
-								icon={SiHackerrank}
-								text="Hacker Rank Contest List"
-								link="https://www.hackerrank.com/contests"
-							/>
+							<Goto />
 						</ul>
 						<h1 className="text-lg font-bold text-left ">Readings</h1>
 						<ul className="grid grid-cols-3 gap-4 gap-y-4 text-left sm:grid-cols-4">
-							<ListItem
-								icon={DiMitlicence}
-								text="MIT Typescript Course"
-								link="https://web.mit.edu/6.031/www/fa21"
-							/>
-							<ListItem
-								icon={SiJavascript}
-								text="Javascript Design Pattern"
-								link="https://www.thisdot.co/blog/clean-up-your-code-with-design-patterns-in-javascript"
-							/>
-							<ListItem
-								icon={SiJavascript}
-								text="How Javascript Works"
-								link="https://blog.devgenius.io/how-javascript-works-behind-the-scenes-88c546173f32"
-							/>
-							<ListItem
-								icon={SiLoop}
-								text="Concurrency and multi-thread"
-								link="https://blog.devgenius.io/concurrency-multi-threading-multi-processing-asynchronous-programming-and-event-loop-1b8df9fa6c20"
-							/>
-							<ListItem
-								icon={BsMedium}
-								text="Backend and REST API"
-								link="https://medium.com/techloop/an-introduction-to-backend-development-and-rest-apis-b1a1a978821f"
-							/>
-							<ListItem
-								icon={SiGithub}
-								text="Footlocker Bot Code"
-								link="https://github.com/ceodavee/footlocker.js"
-							/>
-							<ListItem
-								icon={SiYoutube}
-								text="CP - Steps and Mistakes"
-								link="https://www.youtube.com/watch?v=bVKHRtafgPc"
-							/>
-							<ListItem
-								icon={SiJavascript}
-								text="Javascript Error Handling"
-								link="https://javascript.plainenglish.io/javascript-errors-exceptions-handling-43ae983cbbb3"
-							/>
-							<ListItem
-								icon={SiJavascript}
-								text="2022 Javascript feature preview"
-								link="https://p42.ai/blog/2021-12-31/es2022-preview-10-exciting-javascript-language-features-from-2021"
-							/>
-							<ListItem
-								icon={VscDebugBreakpointLog}
-								text="Nullptrs"
-								link="https://nullpt.rs/"
-							/>
-							<ListItem
-								icon={SiMongodb}
-								text="MongoDB Guide"
-								link="https://faun.pub/mongodb-com-50d2f3016c2b"
-							/>
-							<ListItem
-								icon={SiTypescript}
-								text="Typescript Deep Dive"
-								link="https://basarat.gitbook.io/typescript/"
-							/>
-							<ListItem
-								icon={SiStackoverflow}
-								text="Preload.JS Electron Explanation"
-								link="https://stackoverflow.com/questions/57807459/how-to-use-preload-js-properly-in-electron"
-							/>
-							<ListItem
-								icon={VscRegex}
-								text="Regex Match All Characters Between Strings"
-								link="https://stackoverflow.com/questions/6109882/regex-match-all-characters-between-two-strings"
-							/>
-							<ListItem
-								icon={SiBitcoin}
-								text="Beginner Guide To Coin Base Pro"
-								link="https://hackernoon.com/beginners-guide-to-coinbase-pro-an-exchange-of-coinbase-to-trade-btc-eth-and-ltc-72f04eee8092"
-							/>
+							<Readings />
 						</ul>
 						<h1 className="text-lg font-bold text-left">
 							Stock/Crypto Markets
 						</h1>
 						<ul className="grid relative grid-cols-3 gap-4 pb-32 text-left sm:grid-cols-4">
-							<ListItem
-								icon={SiBitcoin}
-								text="Coin Market Cap"
-								link="https://coinmarketcap.com/watchlist/"
-							/>
-							<ListItem
-								icon={SiBitcoin}
-								text="Coin Base Pro"
-								link="https://pro.coinbase.com/"
-							/>
-							<ListItem
-								icon={SiBitcoin}
-								text="Coin Base"
-								link="https://coinbase.com/"
-							/>
-							<ListItem
-								icon={RiStockFill}
-								text="Trading View"
-								link="https://www.tradingview.com/"
-							/>
+							<CryptoReading />
 						</ul>
 						<h1 className="pt-10 pb-10 font-mit text-sm font-medium text-center">
 							© 2021 Min Chun Fu. All rights reserved.
