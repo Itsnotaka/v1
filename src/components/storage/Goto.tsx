@@ -1,12 +1,19 @@
-import { AiOutlineBgColors } from "react-icons/ai";
-import { CgLinear } from "react-icons/cg";
-import { DiMongodb } from "react-icons/di";
-import { FaBookOpen } from "react-icons/fa";
-import { GrProductHunt } from "react-icons/gr";
-import { MdSignalCellularAlt } from "react-icons/md";
-import { SiGithub, SiTailwindcss, SiApple, SiMacos, SiReact, SiHackerrank } from "react-icons/si";
-import { VscSymbolColor, VscDiff } from "react-icons/vsc";
-import { ListItem } from "../ListItems";
+import {AiOutlineBgColors} from 'react-icons/ai';
+import {CgLinear} from 'react-icons/cg';
+import {DiMongodb} from 'react-icons/di';
+import {FaBookOpen} from 'react-icons/fa';
+import {GrProductHunt} from 'react-icons/gr';
+import {MdSignalCellularAlt} from 'react-icons/md';
+import {
+	SiGithub,
+	SiTailwindcss,
+	SiApple,
+	SiMacos,
+	SiReact,
+	SiHackerrank,
+} from 'react-icons/si';
+import {VscSymbolColor, VscDiff} from 'react-icons/vsc';
+import {ListItem} from '../ListItems';
 
 const Goto = () => {
 	return (
@@ -25,6 +32,11 @@ const Goto = () => {
 				icon={SiTailwindcss}
 				text="Postsrc Tailwind Component"
 				link="https://postsrc.com/components"
+			/>
+			<ListItem
+				icon={SiTailwindcss}
+				text="Flowbite Tailwind Component"
+				link="https://flowbite.com/#components"
 			/>
 			<ListItem
 				icon={VscSymbolColor}
