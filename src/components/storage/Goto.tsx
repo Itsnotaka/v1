@@ -19,11 +19,6 @@ const Goto = () => {
 	return (
 		<>
 			<ListItem
-				icon={SiGithub}
-				text="Discord Image Downloader"
-				link="https://github.com/Seklfreak/discord-image-downloader-go"
-			/>
-			<ListItem
 				icon={SiTailwindcss}
 				text="Tailwind UI"
 				link="https://tailwindui.com/"
@@ -42,6 +37,11 @@ const Goto = () => {
 				icon={VscSymbolColor}
 				text="Carbon"
 				link="https://carbon.now.sh/"
+			/>
+			<ListItem
+				icon={SiGithub}
+				text="Discord Image Downloader"
+				link="https://github.com/Seklfreak/discord-image-downloader-go"
 			/>
 			<ListItem icon={CgLinear} text="Linear" link="https://linear.app/" />
 			<ListItem
