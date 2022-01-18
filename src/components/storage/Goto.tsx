@@ -47,7 +47,7 @@ const Goto = () => {
 			/>
 			<ListItem icon={CgLinear} text="Linear" link="https://linear.app/" />
 			<ListItem icon={SiDevdotto} text="Free For Dev" link='https://free-for.dev/#/?id=international-mobile-number-verification-api-and-sdk' />
-			<ListItem icon={SiJavascript} text='https://tauri.studio/' link="Tauri"/>
+			<ListItem icon={SiJavascript} text='Tauri' link="https://tauri.studio/"/>
 			<ListItem
 				icon={FaBookOpen}
 				text="Learn X by doing Y"
