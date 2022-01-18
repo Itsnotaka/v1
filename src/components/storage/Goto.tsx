@@ -11,6 +11,8 @@ import {
 	SiMacos,
 	SiReact,
 	SiHackerrank,
+	SiDevdotto,
+	SiJavascript
 } from 'react-icons/si';
 import {VscSymbolColor, VscDiff} from 'react-icons/vsc';
 import {ListItem} from '../ListItems';
@@ -44,6 +46,8 @@ const Goto = () => {
 				link="https://github.com/Seklfreak/discord-image-downloader-go"
 			/>
 			<ListItem icon={CgLinear} text="Linear" link="https://linear.app/" />
+			<ListItem icon={SiDevdotto} text="Free For Dev" link='https://free-for.dev/#/?id=international-mobile-number-verification-api-and-sdk' />
+			<ListItem icon={SiJavascript} text='https://tauri.studio/' link="Tauri"/>
 			<ListItem
 				icon={FaBookOpen}
 				text="Learn X by doing Y"
