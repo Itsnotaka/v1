@@ -3,11 +3,11 @@
 # dependencies
 /node_modules
 /.pnp
-.env
 .pnp.js
 
 # testing
 /coverage
+/.history
 
 # next.js
 /.next/

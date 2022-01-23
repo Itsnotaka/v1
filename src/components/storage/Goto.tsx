@@ -12,7 +12,7 @@ import {
 	SiReact,
 	SiHackerrank,
 	SiDevdotto,
-	SiJavascript
+	SiJavascript,
 } from 'react-icons/si';
 import {VscSymbolColor, VscDiff} from 'react-icons/vsc';
 import {ListItem} from '../ListItems';
@@ -36,6 +36,11 @@ const Goto = () => {
 				link="https://flowbite.com/#components"
 			/>
 			<ListItem
+				icon={SiTailwindcss}
+				text="25 Places For Free Tailwind Components"
+				link="https://dev.to/cruip/25-places-where-you-can-get-free-tailwind-css-components-47lm"
+			/>
+			<ListItem
 				icon={VscSymbolColor}
 				text="Carbon"
 				link="https://carbon.now.sh/"
@@ -45,15 +50,23 @@ const Goto = () => {
 				text="Discord Image Downloader"
 				link="https://github.com/Seklfreak/discord-image-downloader-go"
 			/>
-			<ListItem icon={CgLinear} text="Linear" link="https://linear.app/" />
-			<ListItem icon={SiDevdotto} text="Free For Dev" link='https://free-for.dev/#/?id=international-mobile-number-verification-api-and-sdk' />
-			<ListItem icon={SiJavascript} text='Tauri' link="https://tauri.studio/"/>
+			<ListItem 
+				icon={CgLinear} 
+				text="Linear" 
+				link="https://linear.app/" 
+			/>
+			<ListItem
+				icon={SiDevdotto}
+				text="Free For Dev"
+				link="https://free-for.dev/"
+			/>
+			<ListItem icon={SiJavascript} text="Tauri" link="https://tauri.studio/" />
+
 			<ListItem
 				icon={FaBookOpen}
 				text="Learn X by doing Y"
 				link="https://aquadzn.github.io/learn-x-by-doing-y/"
 			/>
-
 			<ListItem
 				icon={VscDiff}
 				text="Diff Checker"
