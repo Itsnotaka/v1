@@ -44,11 +44,6 @@ const software = [
 		href: 'https://www.google.com/chrome/',
 	},
 	{product: 'Figma', type: 'Design Software', href: 'https://www.figma.com/'},
-	{
-		product: 'GitKraken',
-		type: 'Git Client',
-		href: 'https://www.gitkraken.com/',
-	},
 	{product: 'Hyper', type: 'Terminal', href: 'https://hyper.is/'},
 	{
 		product: 'GoLand',
