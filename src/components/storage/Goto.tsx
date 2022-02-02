@@ -27,8 +27,8 @@ const Goto = () => {
 			/>
 			<ListItem
 				icon={SiTailwindcss}
-				text="Postsrc Tailwind Component"
-				link="https://postsrc.com/components"
+				text="Radix UI - (Used by Vercel)"
+				link="https://www.radix-ui.com/"
 			/>
 			<ListItem
 				icon={SiTailwindcss}
