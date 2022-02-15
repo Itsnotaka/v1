@@ -10,7 +10,6 @@ module.exports = {
 		'plugin:react/recommended',
 		'xo',
 		'xo-typescript',
-		'plugin:tailwindcss/recommended',
 	],
 	parser: '@typescript-eslint/parser',
 	parserOptions: {
@@ -19,7 +18,7 @@ module.exports = {
 		sourceType: 'module',
 		project: './tsconfig.json',
 	},
-	plugins: ['react', '@typescript-eslint', 'tailwindcss'],
+	plugins: ['react', '@typescript-eslint'],
 	ignorePatterns: ['**/*.js'],
 	rules: {
 		// Next.js
