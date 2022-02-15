@@ -1,7 +1,7 @@
+/* eslint-disable new-cap */
 /* This example requires Tailwind CSS v2.0+ */
 import {Fragment, useState} from 'react';
 import {Transition} from '@headlessui/react';
-import {XIcon} from '@heroicons/react/solid';
 import {IoCopy} from 'react-icons/io5';
 import {VscClose} from 'react-icons/vsc';
 

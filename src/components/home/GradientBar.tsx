@@ -1,3 +1,4 @@
+/* eslint-disable new-cap */
 import {GiSpiderWeb} from 'react-icons/gi';
 
 const GradientBar = () => (

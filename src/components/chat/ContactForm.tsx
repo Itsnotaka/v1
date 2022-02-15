@@ -1,3 +1,4 @@
+/* eslint-disable new-cap */
 import {useState} from 'react';
 import {BsCheckLg} from 'react-icons/bs';
 import {GiSpiderWeb} from 'react-icons/gi';

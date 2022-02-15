@@ -1,6 +1,5 @@
 import Header from '../components/_Header';
 import Typist from 'react-typist';
-
 import {ListItem} from '../components/ListItems';
 import {
 	SiAmazonaws,
@@ -16,7 +15,6 @@ import {
 	SiWebpack,
 	SiYarn,
 } from 'react-icons/si';
-import {HiOutlineLocationMarker} from 'react-icons/hi';
 import {useLanyard, Data as LanyardData} from 'use-lanyard';
 import RoadMap from '../components/home/RoadMap';
 import GradientBar from '../components/home/GradientBar';
@@ -27,6 +25,7 @@ interface Props {
 	lanyard: LanyardData;
 }
 export default function Home(props: Props) {
+	// eslint-disable-next-line @typescript-eslint/no-unused-vars
 	const {data: lanyard} = useLanyard('365733917090906113', {
 		fallbackData: props.lanyard,
 	});

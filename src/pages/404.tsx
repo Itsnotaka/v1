@@ -30,6 +30,7 @@ const Page404 = () => (
 								></div>
 								<button className="flex relative items-center py-4 px-7 leading-none bg-black rounded-lg divide-x divide-gray-600">
 									<span className="flex items-center space-x-5">
+										{/* eslint-disable-next-line new-cap */}
 										{GiSpiderWeb({className: 'w-6 h-6 teal-200'})}
 										<span
 											className={`pr-6 font-medium ${'text-gray-100 group-hover:text-pink-600 duration-1000'}`}

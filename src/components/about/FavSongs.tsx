@@ -1,6 +1,5 @@
-import {Transition} from '@headlessui/react';
 import Image from 'next/image';
-import React, {Fragment, useState} from 'react';
+import React from 'react';
 const files = [
 	{
 		title: '螢火',

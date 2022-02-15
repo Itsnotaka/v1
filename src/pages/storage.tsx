@@ -55,7 +55,7 @@ const Home: NextPage = () => {
 						</h3>
 						<button
 							onClick={() => {
-								navigator.clipboard.writeText('yarn global add typescript');
+								void navigator.clipboard.writeText('yarn global add typescript');
 								setShowNotification(true);
 								setTimeout(() => {
 									setShowNotification(false);

@@ -69,6 +69,7 @@ const RoadMap = () => (
 			{timeline.map((event, eventIdx) => (
 				<li key={event.id}>
 					<div className="relative pb-8">
+						{/* eslint-disable-next-line no-negated-condition */}
 						{eventIdx !== timeline.length - 1 ? (
 							<span
 								className="absolute top-4 left-4 -ml-px w-0.5 h-full bg-gray-200"
