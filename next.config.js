@@ -4,4 +4,5 @@ module.exports = {
 		domains: ['i.scdn.co', 'cdn.discordapp.com'],
 	},
 	reactStrictMode: true,
+	swcMinify: true,
 };
