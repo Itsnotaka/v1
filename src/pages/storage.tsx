@@ -2,36 +2,7 @@ import type {NextPage} from 'next';
 import {useState} from 'react';
 import Header from '../components/_Header';
 import {ListItem} from '../components/ListItems';
-import {
-	SiApple,
-	SiBitcoin,
-	SiGithub,
-	SiHackerrank,
-	SiJavascript,
-	SiMacos,
-	SiMongodb,
-	SiReact,
-	SiStackoverflow,
-	SiTailwindcss,
-	SiTypescript,
-	SiYoutube,
-	SiLoop,
-} from 'react-icons/si';
-import {
-	VscSymbolColor,
-	VscDiff,
-	VscDebugBreakpointLog,
-	VscRegex,
-} from 'react-icons/vsc';
-import {CgLinear} from 'react-icons/cg';
-import {FaBookOpen} from 'react-icons/fa';
-import {GrProductHunt} from 'react-icons/gr';
-import {DiMongodb, DiMitlicence} from 'react-icons/di';
-import {MdSignalCellularAlt} from 'react-icons/md';
-import {BsMedium} from 'react-icons/bs';
-import {AiOutlineBgColors} from 'react-icons/ai';
-import {RiStockFill} from 'react-icons/ri';
-import {IoCopy, IoLogoCss3} from 'react-icons/io5';
+import {IoCopy} from 'react-icons/io5';
 import NotificationCard from '../components/storage/NotificationCard';
 import Head from 'next/head';
 import Typist from 'react-typist';
