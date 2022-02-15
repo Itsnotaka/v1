@@ -72,28 +72,28 @@ const RoadMap = () => (
 						{/* eslint-disable-next-line no-negated-condition */}
 						{eventIdx !== timeline.length - 1 ? (
 							<span
-								className="absolute top-4 left-4 -ml-px w-0.5 h-full bg-gray-200"
+								className="absolute top-4 left-4 -ml-px h-full w-0.5 bg-gray-200"
 								aria-hidden="true"
 							/>
 						) : null}
-						<div className="flex relative space-x-3">
+						<div className="relative flex space-x-3">
 							<div>
 								<span
 									className={classNames(
 										event.iconBackground,
-										'h-8 w-8 rounded-full flex items-center justify-center ring-8 ring-transparent',
+										'flex h-8 w-8 items-center justify-center rounded-full ring-8 ring-transparent',
 									)}
 								>
 									<event.icon
-										className="w-5 h-5 text-white"
+										className="h-5 w-5 text-white"
 										aria-hidden="true"
 									/>
 								</span>
 							</div>
-							<div className="flex flex-1 justify-between pt-1.5 space-x-4 min-w-0">
+							<div className="flex min-w-0 flex-1 justify-between space-x-4 pt-1.5">
 								<div>
 									<pre className="text-sm text-gray-500">
-										{event.content}{" "}
+										{event.content}{' '}
 										<a
 											// Href={event.href}
 											className="font-medium text-teal-200"
@@ -102,7 +102,7 @@ const RoadMap = () => (
 										</a>
 									</pre>
 								</div>
-								<div className="text-sm text-right text-gray-500 whitespace-nowrap">
+								<div className="whitespace-nowrap text-right text-sm text-gray-500">
 									<time dateTime={event.datetime}>{event.date}</time>
 								</div>
 							</div>

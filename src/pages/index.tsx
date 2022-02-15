@@ -36,7 +36,7 @@ export default function Home(props: Props) {
 				<title>Home - Daniel Fu</title>
 			</Head>
 			<Header />
-			<div className="px-4 mx-auto max-w-7xl sm:px-6 lg:px-8">
+			<div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
 				{/* We've used 3xl here, but feel free to try other max-widths based on your needs */}
 				<div className="mx-auto max-w-3xl">
 					<div className="space-y-4 text-center">
@@ -44,19 +44,22 @@ export default function Home(props: Props) {
 						<h1 className="font-mit text-4xl font-bold">
 							Hello, I am Daniel 👋
 						</h1>
-						<Typist cursor={{hideWhenDone: true}} className="relative top-2 text-lg font-medium underline">
+						<Typist
+							cursor={{hideWhenDone: true}}
+							className="relative top-2 text-lg font-medium underline"
+						>
 							Be passionate about your life, be interested in everything
 							surrounding you.
 						</Typist>
 						<GradientBar />
-						<p className="text-lg text-left opacity-80 hover:opacity-100">
+						<p className="text-left text-lg opacity-80 hover:opacity-100">
 							Alright let's do this one last time. My name is Min Chun Fu. I am
 							an ordinary {age} year old student. I was not bitten by a
 							radioactive spider and I am pretty sure you know the rest. My
 							favorite quote is "think about why obvious questions are obvious,
 							that makes you understand how to solve complex problems"
 						</p>
-						<h1 className="font-mit text-2xl font-medium text-left">
+						<h1 className="text-left font-mit text-2xl font-medium">
 							My Tech Stack 💻
 						</h1>
 						<ul className="grid grid-cols-3 gap-4 text-left sm:grid-cols-4">
@@ -74,7 +77,7 @@ export default function Home(props: Props) {
 							<ListItem icon={SiStyledComponents} text="Styled Components" />
 						</ul>
 
-						<h1 className="font-mit text-2xl font-medium text-left">
+						<h1 className="text-left font-mit text-2xl font-medium">
 							How Did I End Up Here? 🤔
 						</h1>
 						<RoadMap />

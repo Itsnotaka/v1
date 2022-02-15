@@ -1,9 +1,18 @@
-import {BsMedium} from "react-icons/bs";
-import {DiMitlicence} from "react-icons/di";
-import {IoLogoCss3} from "react-icons/io5";
-import {SiJavascript, SiLoop, SiGithub, SiYoutube, SiMongodb, SiTypescript, SiStackoverflow, SiBitcoin} from "react-icons/si";
-import {VscDebugBreakpointLog, VscRegex} from "react-icons/vsc";
-import {ListItem} from "../ListItems";
+import {BsMedium} from 'react-icons/bs';
+import {DiMitlicence} from 'react-icons/di';
+import {IoLogoCss3} from 'react-icons/io5';
+import {
+	SiJavascript,
+	SiLoop,
+	SiGithub,
+	SiYoutube,
+	SiMongodb,
+	SiTypescript,
+	SiStackoverflow,
+	SiBitcoin,
+} from 'react-icons/si';
+import {VscDebugBreakpointLog, VscRegex} from 'react-icons/vsc';
+import {ListItem} from '../ListItems';
 
 const Readings = () => (
 	<>

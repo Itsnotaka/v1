@@ -21,12 +21,13 @@ const Header = () => {
 
 	return (
 		<header className="max-h-auto">
-			<nav className="px-4 mx-auto max-w-7xl sm:px-6 lg:px-8" aria-label="Top">
-				<div className="flex justify-between items-center py-6 w-full border-b border-near-black lg:border-none">
+			<nav className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8" aria-label="Top">
+				<div className="flex w-full items-center justify-between border-b border-near-black py-6 lg:border-none">
 					<div className="flex items-center ">
 						{/* <span className="sr-only">Workflow</span> */}
 						<button
-							onClick={() => {
+							onClick={e => {
+								e.preventDefault();
 								setIsShowing(false);
 								resetIsShowing();
 							}}
@@ -43,7 +44,7 @@ const Header = () => {
 							>
 								{/* eslint-disable-next-line @next/next/no-img-element */}
 								<img
-									className="w-auto h-10 rounded-xl opacity-50 hover:opacity-100"
+									className="h-10 w-auto rounded-xl opacity-50 hover:opacity-100"
 									src="https://cdn.discordapp.com/attachments/711900255456591892/925362074773749760/Untitled_1.png"
 									alt=""
 								/>
@@ -51,7 +52,7 @@ const Header = () => {
 						</button>
 
 						<div
-							className={`font-medium hidden ml-10 space-x-8 lg:block underline decoration-teal-300/80 hover:decoration-white duration-300`}
+							className={`ml-10 hidden space-x-8 font-medium underline decoration-teal-300/80 duration-300 hover:decoration-white lg:block`}
 						>
 							{/* className="opacity-50 hover:opacity-100 text-base font-mit font-bold text-white hover:text-indigo-50 */}
 
@@ -80,7 +81,7 @@ const Header = () => {
               </a>
             </div> */}
 				</div>
-				<div className="flex flex-wrap justify-center py-4 space-x-6 underline decoration-teal-300/80 hover:decoration-white duration-300 lg:hidden">
+				<div className="flex flex-wrap justify-center space-x-6 py-4 underline decoration-teal-300/80 duration-300 hover:decoration-white lg:hidden">
 					{/* className="text-base font-mit font-bold text-white hover:text-indigo-50" */}
 					{navigation.map(link => (
 						<Link key={link.name} href={link.href}>

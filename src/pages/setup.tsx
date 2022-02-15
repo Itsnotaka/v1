@@ -67,36 +67,38 @@ const Setup = () => (
 			<title>Setup - Daniel Fu</title>
 		</Head>
 		<Header />
-		<div className="px-4 mx-auto max-w-7xl sm:px-6 lg:px-8">
+		<div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
 			{/* We've used 3xl here, but feel free to try other max-widths based on your needs */}
 			<div className="mx-auto max-w-3xl">
 				<div className="space-y-4 text-left">
 					<div className="flex space-x-3"></div>
-					<Typist cursor={{hideWhenDone: true}} className="font-mit text-4xl font-bold">Setup</Typist>
+					<Typist
+						cursor={{hideWhenDone: true}}
+						className="font-mit text-4xl font-bold"
+					>
+						Setup
+					</Typist>
 					<span className="mt-4 text-xl font-bold tracking-widest ">
-							An overview of my setup
+						An overview of my setup
 					</span>
-					<h3 className="pb-2 mt-4 text-xl font-bold tracking-widest border-b border-gray-300 dark:border-gray-700">
-							HARDWARE
+					<h3 className="mt-4 border-b border-gray-300 pb-2 text-xl font-bold tracking-widest dark:border-gray-700">
+						HARDWARE
 					</h3>
-					<div className="grid gap-2 my-2">
+					<div className="my-2 grid gap-2">
 						{hardware.map(item => (
-							<Card
-								key={item.product}
-								{...item}
-							/>
+							<Card key={item.product} {...item} />
 						))}
 					</div>
-					<h3 className="pb-2 mt-4 text-xl font-bold tracking-widest border-b border-gray-300 dark:border-gray-700">
-							SOFTWARE
+					<h3 className="mt-4 border-b border-gray-300 pb-2 text-xl font-bold tracking-widest dark:border-gray-700">
+						SOFTWARE
 					</h3>
-					<div className="grid gap-2 my-2 sm:grid-cols-2 md:grid-cols-4">
+					<div className="my-2 grid gap-2 sm:grid-cols-2 md:grid-cols-4">
 						{software.map(item => (
 							<Card key={item.product} {...item} />
 						))}
 					</div>
-					<h1 className="pt-10 pb-10 font-mit text-sm font-medium text-center">
-							© 2021 Min Chun Fu. All rights reserved.
+					<h1 className="pt-10 pb-10 text-center font-mit text-sm font-medium">
+						© 2021 Min Chun Fu. All rights reserved.
 					</h1>
 				</div>
 			</div>

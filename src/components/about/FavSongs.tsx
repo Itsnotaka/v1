@@ -50,15 +50,15 @@ const FavSongs = () => (
 	>
 		{files.map(file => (
 			<li key={file.source} className="relative">
-				<button className="group block overflow-hidden w-full rounded-md focus-within:ring-2 focus-within:ring-offset-2 shadow-lg aspect-w-10 aspect-h-10">
-					<a className="object-cover grayscale-[30%] group-hover:grayscale-0 transition-all duration-500 group-hover:scale-110 pointer-events-none">
+				<button className="group aspect-w-10 aspect-h-10 block w-full overflow-hidden rounded-md shadow-lg focus-within:ring-2 focus-within:ring-offset-2">
+					<a className="pointer-events-none object-cover grayscale-[30%] transition-all duration-500 group-hover:scale-110 group-hover:grayscale-0">
 						{<Image src={file.source} alt="" height={640} width={640} />}
 					</a>
 				</button>
-				<p className="block mt-2 text-sm font-medium text-white truncate opacity-70 pointer-events-none">
+				<p className="pointer-events-none mt-2 block truncate text-sm font-medium text-white opacity-70">
 					{file.author}
 				</p>
-				<p className="block mt-2 h-20 text-sm font-medium text-white truncate opacity-70 pointer-events-none">
+				<p className="pointer-events-none mt-2 block h-20 truncate text-sm font-medium text-white opacity-70">
 					{file.title}
 				</p>
 			</li>

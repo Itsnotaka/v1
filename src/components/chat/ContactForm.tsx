@@ -11,9 +11,9 @@ export default function ContactForm() {
 	const [submitted, setSubmitted] = useState(false);
 	return (
 		<>
-			<div className="flex flex-col justify-center py-12 min-h-full sm:px-6 lg:px-8">
+			<div className="flex min-h-full flex-col justify-center py-12 sm:px-6 lg:px-8">
 				<div className="mt-8 sm:mx-auto sm:w-full sm:max-w-md">
-					<div className="py-8 px-4 shadow sm:px-10 sm:rounded-lg bg-opacity-10">
+					<div className="bg-opacity-10 py-8 px-4 shadow sm:rounded-lg sm:px-10">
 						<form
 							className="space-y-6"
 							action="/api/form"
@@ -49,7 +49,7 @@ export default function ContactForm() {
 							<div>
 								<label
 									htmlFor="email"
-									className="block text-sm font-medium text-left text-white"
+									className="block text-left text-sm font-medium text-white"
 								>
 									Email address
 								</label>
@@ -60,13 +60,13 @@ export default function ContactForm() {
 										type="email"
 										autoComplete="email"
 										required
-										className="block py-2 px-3 w-full font-mit text-base font-medium rounded-md border focus:border-teal-300 focus:outline-none shadow-sm appearance-none"
+										className="block w-full appearance-none rounded-md border py-2 px-3 font-mit text-base font-medium shadow-sm focus:border-teal-300 focus:outline-none"
 									/>
 								</div>
 							</div>
 							<label
 								htmlFor="email"
-								className="block text-sm font-medium text-left text-white"
+								className="block text-left text-sm font-medium text-white"
 							>
 								What would you like to say to me?
 							</label>
@@ -74,29 +74,43 @@ export default function ContactForm() {
 								rows={4}
 								name="comment"
 								id="comment"
-								className="block w-full font-mit text-base font-medium text-black rounded-md border-gray-300 focus:border-teal-300 shadow-sm"
+								className="block w-full rounded-md border-gray-300 font-mit text-base font-medium text-black shadow-sm focus:border-teal-300"
 								defaultValue={''}
 							/>
 
-							<div className="grid gap-8 justify-center items-start">
+							<div className="grid items-start justify-center gap-8">
 								<div className="group relative">
 									<div
-										className={`absolute -inset-0.5 bg-gradient-to-r  rounded-lg blur opacity-75 group-hover:opacity-100 transition duration-1000 ${
+										className={`absolute -inset-0.5 rounded-lg  bg-gradient-to-r opacity-75 blur transition duration-1000 group-hover:opacity-100 ${
 											submitted
-												? 'bg-emerald-300 animate-pulse'
+												? 'animate-pulse bg-emerald-300'
 												: 'from-white to-gray-500 group-hover:from-pink-600 group-hover:to-blue-600'
-										} group-hover:duration-2000 animate-tilt`}
+										} animate-tilt group-hover:duration-2000`}
 									></div>
-									<button className="flex relative items-center py-4 px-7 leading-none bg-black rounded-lg divide-x divide-gray-600">
+									<button className="relative flex items-center divide-x divide-gray-600 rounded-lg bg-black py-4 px-7 leading-none">
 										<span className="flex items-center space-x-5">
-											{submitted ? '' : GiSpiderWeb({className: 'w-6 h-6 teal-200'})}
-											<span className={`pr-6 font-medium ${submitted ? "text-emerald-300 animate-pulse" : "text-gray-100 group-hover:text-pink-600 duration-1000"}`}>
+											{submitted
+												? ''
+												: GiSpiderWeb({className: 'w-6 h-6 teal-200'})}
+											<span
+												className={`pr-6 font-medium ${
+													submitted
+														? 'animate-pulse text-emerald-300'
+														: 'text-gray-100 duration-1000 group-hover:text-pink-600'
+												}`}
+											>
 												{submitted
 													? 'Successfully Submitted'
 													: 'Ready To Submit?'}
 											</span>
 										</span>
-										<span className={`pl-6 ${submitted ? "text-emerald-300 animate-pulse" : "text-gray-100 group-hover:text-indigo-400 transition duration-1000"}`}>
+										<span
+											className={`pl-6 ${
+												submitted
+													? 'animate-pulse text-emerald-300'
+													: 'text-gray-100 transition duration-1000 group-hover:text-indigo-400'
+											}`}
+										>
 											{submitted
 												? BsCheckLg({className: 'teal-200'})
 												: BiRightArrow({className: 'teal-200'})}

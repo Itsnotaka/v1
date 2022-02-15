@@ -19,23 +19,23 @@ const Home: NextPage = () => {
 				<title>Storage - Daniel Fu</title>
 			</Head>
 			<Header />
-			<div className="px-4 mx-auto max-w-7xl sm:px-6 lg:px-8">
+			<div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
 				{/* We've used 3xl here, but feel free to try other max-widths based on your needs */}
 				<div className="mx-auto max-w-3xl">
 					<div className="space-y-4 text-center">
 						<div className="flex space-x-3"></div>
 						<Typist
 							cursor={{hideWhenDone: true}}
-							className="font-mit text-4xl font-bold text-left"
+							className="text-left font-mit text-4xl font-bold"
 						>
 							Storage Space
 						</Typist>
-						<h3 className="pb-2 mt-4 text-xl font-bold tracking-widest text-left border-b border-gray-300 dark:border-gray-700">
+						<h3 className="mt-4 border-b border-gray-300 pb-2 text-left text-xl font-bold tracking-widest dark:border-gray-700">
 							A cool storage place where I store import links and articles to
 							read
 						</h3>
-						<h1 className="text-xl font-bold text-left ">Important Commands</h1>
-						<h3 className="text-lg font-bold text-left ">Undo Git Init</h3>
+						<h1 className="text-left text-xl font-bold ">Important Commands</h1>
+						<h3 className="text-left text-lg font-bold ">Undo Git Init</h3>
 						<ul className="grid grid-cols-3 gap-4 text-left sm:grid-cols-4"></ul>
 						<button
 							onClick={() => {
@@ -50,12 +50,14 @@ const Home: NextPage = () => {
 							{showNotification ? <NotificationCard /> : <></>}
 							<ListItem icon={IoCopy} text="rm -rf .git" css="font-semibold" />
 						</button>
-						<h3 className="text-lg font-bold text-left ">
+						<h3 className="text-left text-lg font-bold ">
 							Install TypeScript Globally
 						</h3>
 						<button
 							onClick={() => {
-								void navigator.clipboard.writeText('yarn global add typescript');
+								void navigator.clipboard.writeText(
+									'yarn global add typescript',
+								);
 								setShowNotification(true);
 								setTimeout(() => {
 									setShowNotification(false);
@@ -69,21 +71,21 @@ const Home: NextPage = () => {
 								css="font-semibold"
 							/>
 						</button>
-						<h1 className="text-lg font-bold text-left ">Go to...</h1>
+						<h1 className="text-left text-lg font-bold ">Go to...</h1>
 						<ul className="grid grid-cols-3 gap-4 gap-y-4 text-left sm:grid-cols-4">
 							<Goto />
 						</ul>
-						<h1 className="text-lg font-bold text-left ">Readings</h1>
+						<h1 className="text-left text-lg font-bold ">Readings</h1>
 						<ul className="grid grid-cols-3 gap-4 gap-y-4 text-left sm:grid-cols-4">
 							<Readings />
 						</ul>
-						<h1 className="text-lg font-bold text-left">
+						<h1 className="text-left text-lg font-bold">
 							Stock/Crypto Markets
 						</h1>
-						<ul className="grid relative grid-cols-3 gap-4 pb-32 text-left sm:grid-cols-4">
+						<ul className="relative grid grid-cols-3 gap-4 pb-32 text-left sm:grid-cols-4">
 							<CryptoReading />
 						</ul>
-						<h1 className="pt-10 pb-10 font-mit text-sm font-medium text-center">
+						<h1 className="pt-10 pb-10 text-center font-mit text-sm font-medium">
 							© 2021 Min Chun Fu. All rights reserved.
 						</h1>
 					</div>

@@ -49,11 +49,7 @@ const Goto = () => (
 			text="Discord Image Downloader"
 			link="https://github.com/Seklfreak/discord-image-downloader-go"
 		/>
-		<ListItem
-			icon={CgLinear}
-			text="Linear"
-			link="https://linear.app/"
-		/>
+		<ListItem icon={CgLinear} text="Linear" link="https://linear.app/" />
 		<ListItem
 			icon={SiDevdotto}
 			text="Free For Dev"
